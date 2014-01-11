@@ -3,7 +3,7 @@
 This is a skeleton for Meteor, giving you a more organized and structured way to make projects. 
 
 
-## Folder structure
+## Structure
 
 ```
 client/ 					# Client code
