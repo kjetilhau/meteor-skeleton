@@ -1,1 +1,1 @@
-Optional, but usually good to have!
+Optional, but useful!
