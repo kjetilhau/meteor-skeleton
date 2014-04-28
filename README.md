@@ -17,8 +17,9 @@ It contains a few helpers, routes and views. Oh, and a collection with pubs and 
 # Usage
 1. Clone it: ```git clone https://github.com/kjetilhau/meteor-skeleton.git```
 2. ```cd meteor-skeleton```
-2. Delete everything git related (.git folder and .gitignore)
-3. ```git init```
+3. Delete everything git related (.git folder and .gitignore)
+4. ```git init```
+5. ```meteor add less```
 
 ## Structure
 
