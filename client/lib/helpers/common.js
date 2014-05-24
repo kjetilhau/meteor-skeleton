@@ -14,7 +14,7 @@ UI.registerHelper('pluralize', function(count, word) {
   if (count === 1) {
     return '1 ' + word;
   } else {
-    return n + ' ' + word + 's';
+    return count + ' ' + word + 's';
   }
 });
 
