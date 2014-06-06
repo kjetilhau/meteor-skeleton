@@ -1,5 +1,5 @@
 // A sample collection with Collection2 and SimpleSchema
-Documents = new Meteor.Collection2('documents', {
+Documents = new Meteor.Collection('documents', {
   schema: {
     title: {
       type: String,
