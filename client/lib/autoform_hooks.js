@@ -1,7 +1,7 @@
 // Autoform hooks
 
 AutoForm.hooks({
-  myFormId: {
+  documentForm: {
     before: {
       insert: function(doc) {},
       update: function(docId, modifier) {},
@@ -9,8 +9,8 @@ AutoForm.hooks({
       "methodName": function(doc) {}
     },
     after: {
-      insert: function(error, result, template) {},
-      update: function(error, result, template) {},
+      insert: function(error, result, template) { },
+      update: function(error, result, template) { },
       remove: function(error, result, template) {},
       "methodName": function(error, result, template) {}
     },
@@ -18,7 +18,7 @@ AutoForm.hooks({
 
     //called when any operation succeeds, where operation will be
     //"insert", "update", "remove", or the method name.
-    onSuccess: function(operation, result, template) {}, 
+    onSuccess: function(operation, result, template) {},
 
     //called when any operation fails, where operation will be
     //"validation", "insert", "update", "remove", or the method name.

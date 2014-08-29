@@ -1,19 +1,25 @@
 <template name="documentsIndex">
   <div class="row">
     <div class="col-md-12">
-      <h1>Documents Index</h1>
-      <table class="table">
+      <h1>Documents</h1>
+      <a class="btn btn-primary" href="{{pathFor 'documentNew'}}" role="button">New document</a>
+      <table class="table table-striped">
         <thead>
           <tr>
-            <th>#</th>
             <th>Title</th>
+            <th>Content</th>
+            <th>Actions</th>
           </tr>
         </thead>
         <tbody>
           {{#each documents}}
           <tr>
-            <td>{{_id}}</td>
-            <td>{{title}}</td>
+            <td><a href="{{pathFor 'documentShow'}}">{{title}}</a></td>
+            <td>{{content}}</td>
+            <td>
+              <a class="btn btn-xs btn-primary" href="{{pathFor 'documentEdit'}}" role="button">Edit</a>
+              <a class="btn btn-xs btn-danger" href="#" role="button">Delete</a>
+              </td>
           </tr>
           {{else}}
           No documents

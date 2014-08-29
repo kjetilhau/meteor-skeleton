@@ -4,16 +4,12 @@
 # but you can also edit it by hand.
 
 standard-app-packages
-autopublish
 insecure
-
-simple-schema
-collection2
-autoform
-iron-router
-roles
-moment
-less-fontawesome-4
-less-bootstrap-3
-iron-router-progress
-blaze-layout
+cmather:iron-router
+alanning:roles
+aldeed:simple-schema
+aldeed:collection2
+aldeed:autoform
+manuelschoebel:less-fontawesome-4
+manuelschoebel:less-bootstrap-3
+mrt:bootstrap-3

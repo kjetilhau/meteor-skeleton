@@ -1,16 +1,19 @@
-// Fixture data 
+// Fixture data
 if (Documents.find().count() === 0) {
- 
+
   Documents.insert({
-    title: "Derp"
+    title: "Derp",
+    content: "Lorem ipsum, herp derp durr."
   });
 
   Documents.insert({
-    title: "Hurr"
+    title: "Hurr",
+    content: "Lorem ipsum, herp derp durr."
   });
 
   Documents.insert({
-    title: "Durr"
+    title: "Durr",
+    content: "Lorem ipsum, herp derp durr."
   });
 
 }
