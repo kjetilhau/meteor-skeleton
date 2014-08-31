@@ -4,12 +4,14 @@
 # but you can also edit it by hand.
 
 standard-app-packages
-insecure
-cmather:iron-router
-alanning:roles
-aldeed:simple-schema
+
+# Atmosphere
+
 aldeed:collection2
+aldeed:simple-schema
 aldeed:autoform
-manuelschoebel:less-fontawesome-4
-manuelschoebel:less-bootstrap-3
-mrt:bootstrap-3
+iron:router
+alanning:roles
+mizzao:bootstrap-3
+mrt:moment
+accounts-base

@@ -3,15 +3,18 @@ Template.documentsIndex.rendered = function() {
 
 Template.documentsIndex.helpers({
   sayHello: function () {
-    return "Heisann!";
+    return "Hallo!";
   }
 });
 
 Template.documentsIndex.events ({
-  'click .something': function(e) {
+  'click .delete-document': function(e) {
     e.preventDefault();
     var item = this;
 
-    // Do something
+    if (confirm("Are you sure?")) {
+      Documents.remove(item._id);
+      console.log("Deleted!")
+    }
   }
 });

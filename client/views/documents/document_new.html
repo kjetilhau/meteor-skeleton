@@ -1,4 +1,10 @@
 <template name="documentNew">
   <h2>Create document</h2>
-  {{> quickForm collection="Documents" id="DocumentForm" type="insert"}}
+  {{#autoForm collection="Documents" id="documentForm" type="insert"}}
+    <fieldset>
+      {{> afQuickField name='title'}}
+      {{> afQuickField name='content' rows=6}}
+    </fieldset>
+    <button type="submit" class="btn btn-primary">Create</button>
+  {{/autoForm}}
 </template>

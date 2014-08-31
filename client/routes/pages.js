@@ -3,15 +3,19 @@
 // ***************************************************************
 
 Router.map(function() {
-  
+
   // FRONTPAGE
   // -------------------------------------------------------
   this.route('frontpage', {
     path: '/',
-    template: 'frontpage',
-    progress: {
-      enabled: false
-    }
+    template: 'frontpage'
   });
-  
-}); 
+
+  // ABOUT
+  // -------------------------------------------------------
+  this.route('about', {
+    path: '/about',
+    template: 'about'
+  });
+
+});

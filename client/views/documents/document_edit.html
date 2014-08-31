@@ -1,4 +1,10 @@
 <template name="documentEdit">
   <h2>Edit document</h2>
-  {{> quickForm collection="Documents" doc=this id="DocumentForm" type="update"}}
+  {{#autoForm collection="Documents" doc=this id="documentForm" type="update"}}
+    <fieldset>
+      {{> afQuickField name='title'}}
+      {{> afQuickField name='content' rows=6}}
+    </fieldset>
+    <button type="submit" class="btn btn-primary">Update</button>
+  {{/autoForm}}
 </template>
