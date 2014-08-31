@@ -3,21 +3,23 @@ A skeleton/boilerplate for Meteor - giving you a more organized and structured w
 
 It comes with a complete collection sample including publications, subscriptions and CRUD functionality. Routes, views and some nice helpers are also included.
 
+Take a look at [meteor-skeleton.meteor.com](http://meteor-skeleton.meteor.com) for a live sample.
+
 ## Packages used
 
 - standard-app-packages
 - accounts-base
+- alanning:roles
 - iron:router
 - aldeed:simple-schema
 - aldeed:collection2
 - aldeed:autoform
 - mrt:moment
 - mizzao:bootstrap-3
-- alanning:roles
 
 The Meteor packages 'autopublish' and 'insecure' are removed by default.
 
-# Usage
+## Usage
 1. Clone it: ```git clone https://github.com/kjetilhau/meteor-skeleton.git```
 2. ```cd meteor-skeleton```
 3. Remove the .git folder
@@ -44,7 +46,7 @@ client/							# Client code
     shared/						# Usually templates that are shared between views
 lib/							# Code shared with client and server files
   collections/					# Collection files, separate files for each collection
-  helpers/					# Helpers that is accessible on both client and server
+  helpers/							# Helpers that is accessible on both client and server
 public/							# Public files
   img/							# Static image folder
   fonts/						# Static fonts folder

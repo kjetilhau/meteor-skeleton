@@ -14,7 +14,7 @@ Router.map(function() {
     },
     data: {
       documents: function () {
-        return Documents.find({}, {sort: {createdAt: 1}});
+        return Documents.find({}, {sort: {createdAt: -1}});
       }
     }
   });
