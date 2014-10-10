@@ -5,6 +5,8 @@ It comes with a complete collection sample including publications, subscriptions
 
 Take a look at [meteor-skeleton.meteor.com](http://meteor-skeleton.meteor.com) for a live sample.
 
+![Meteor-skeleton](http://i.imgur.com/ETTVDTM.png)
+
 ## Packages used
 
 - standard-app-packages
