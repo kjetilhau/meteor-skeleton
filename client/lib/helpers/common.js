@@ -45,7 +45,7 @@ UI.registerHelper('getProfileImage', function(image) {
   }
 });
 
-// Translates those bytes to something more readable
+// Translates those bytes to something more readable (e.g. 1.2 MB)
 UI.registerHelper('bytesToSize', function(bytes) {
   if (!bytes) {
     return ("");

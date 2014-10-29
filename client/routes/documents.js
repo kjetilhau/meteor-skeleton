@@ -26,7 +26,6 @@ Router.map(function() {
     path: '/documents/new'
   });
 
-
   // DOCUMENT SHOW
   // -------------------------------------------------------
   this.route('documentShow', {

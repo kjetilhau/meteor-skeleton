@@ -3,8 +3,6 @@
 # 'meteor add' and 'meteor remove' will edit this file for you,
 # but you can also edit it by hand.
 
-standard-app-packages
-
 # Atmosphere
 
 aldeed:collection2
@@ -15,3 +13,4 @@ alanning:roles
 mizzao:bootstrap-3
 mrt:moment
 accounts-base
+meteor-platform

@@ -9,7 +9,7 @@ Take a look at [meteor-skeleton.meteor.com](http://meteor-skeleton.meteor.com) f
 
 ## Packages used
 
-- standard-app-packages
+- meteor-platform
 - accounts-base
 - alanning:roles
 - iron:router
@@ -48,7 +48,7 @@ client/							# Client code
     shared/						# Usually templates that are shared between views
 lib/							# Code shared with client and server files
   collections/					# Collection files, separate files for each collection
-  helpers/							# Helpers that is accessible on both client and server
+  helpers/						# Helpers that is accessible on both client and server
 public/							# Public files
   img/							# Static image folder
   fonts/						# Static fonts folder
