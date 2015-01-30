@@ -1,3 +1,7 @@
+// ***************************************************************
+// ROUTER CONFIGURATION
+// ***************************************************************
+
 Router.configure({
   layoutTemplate: 'layout',
   notFoundTemplate: '404',

@@ -1,4 +1,7 @@
-// Fixture data
+// ***************************************************************
+// FIXTURES (generate data for the Documents collection)
+// ***************************************************************
+
 if (Documents.find().count() === 0) {
 
   Documents.insert({

@@ -1,11 +1,11 @@
-// Iron-router filters / hooks that will run on certain routes
+// ***************************************************************
+// ROUTER HOOKS/FILTERS
+// ***************************************************************
 
-var filters = {
+Iron.Router.hooks.aHook = function () {
+  // Do something
+  this.next();
+};
 
-  resetDocumentForm: function() {
-    AutoForm.resetForm('documentForm')
-  }
-
-}
-
-Router.onStop(filters.resetDocumentForm, {only: ['documentNew', 'documentEdit']});
+// Runs the filter before a route is run. (Remove if not needed)
+Router.onBeforeAction('aHook');

@@ -1,20 +1,12 @@
-# Known bugs
+# Notes
 
--  
-
-
-# Todo
-
-- 
+## Known bugs
+  * Note
 
 
-# Other
+## Todo
+  * Note
 
-- 
 
-
-# Release notes
-
-xxxx-xx-xx
-
-- 
+## Other
+  * Note

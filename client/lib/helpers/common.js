@@ -1,10 +1,12 @@
-// Client-side common helpers
+// ***************************************************************
+// COMMON HELPERS (client-side only)
+// ***************************************************************
 
 // Style link as active if it is the current path
 // Usage: <li class="{{active 'frontpage'}}"><a href="{{pathFor 'frontpage'}}">Home</a></li>
 UI.registerHelper('active', function(path) {
   var route = Router.routes[path].path()
-  if (Router.current().path === route) {
+  if (Iron.Location.get().originalUrl === route) {
     return 'active';
   }
 });

@@ -10,7 +10,7 @@ aldeed:simple-schema
 aldeed:autoform
 iron:router
 alanning:roles
-mizzao:bootstrap-3
-mrt:moment
 accounts-base
 meteor-platform
+twbs:bootstrap
+momentjs:moment

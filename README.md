@@ -1,5 +1,5 @@
 # Meteor-skeleton
-A skeleton/boilerplate for Meteor - giving you a more organized and structured way to create projects.
+A boilerplate for Meteor - giving you a simple and more organized way to create projects.
 
 It comes with a complete collection sample including publications, subscriptions and CRUD functionality. Routes, views and some nice helpers are also included.
 
@@ -16,8 +16,8 @@ Take a look at [meteor-skeleton.meteor.com](http://meteor-skeleton.meteor.com) f
 - aldeed:simple-schema
 - aldeed:collection2
 - aldeed:autoform
-- mrt:moment
-- mizzao:bootstrap-3
+- momentjs:moment
+- twbs:bootstrap
 
 The Meteor packages 'autopublish' and 'insecure' are removed by default.
 
