@@ -5,9 +5,9 @@
 
 # Atmosphere
 
+aldeed:autoform
 aldeed:collection2
 aldeed:simple-schema
-aldeed:autoform
 iron:router
 alanning:roles
 accounts-base
