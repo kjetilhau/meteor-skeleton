@@ -1,8 +1,13 @@
 <template name="documentNew">
-  <h2>Create document</h2> {{#autoForm collection="Documents" id="documentForm" type="insert"}}
-  <fieldset>
-    {{> afQuickField name='title'}} {{> afQuickField name='content' rows=6}}
-  </fieldset>
-  <button type="submit" class="btn btn-primary">Create</button>
-  <a class="btn btn-link" role="button" href="{{pathFor 'documentsIndex'}}">Back</a> {{/autoForm}}
+
+  <h2>Create document</h2>
+
+  {{#autoForm collection="Documents" id="documentForm" type="insert"}}
+    <fieldset>
+      {{> afQuickField name='title'}} {{> afQuickField name='content' rows=6}}
+    </fieldset>
+    <button type="submit" class="btn btn-primary">Create</button>
+    <a class="btn btn-link" role="button" href="{{pathFor 'documentsIndex'}}">Back</a>
+  {{/autoForm}}
+
 </template>

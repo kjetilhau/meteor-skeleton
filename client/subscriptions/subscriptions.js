@@ -1,3 +1,3 @@
 // ***************************************************************
-// SUBSCRIPTIONS (not handled with routing)
+// SUBSCRIPTIONS (global subscriptions)
 // ***************************************************************

@@ -1,11 +1,13 @@
 // ***************************************************************
-// ROUTER HOOKS/FILTERS
+// ROUTER FILTERS & TRIGGERS
 // ***************************************************************
 
-Iron.Router.hooks.aHook = function () {
-  // Do something
-  this.next();
-};
+function mustBeLoggedIn(context, redirect, stop) {
+  if (!Meteor.userId()) {
+    // if the user is not logged in, render the front page
+    redirect('frontpage');
+    console.log("Must be logged in!");
+  }
+}
 
-// Runs the filter before a route is run. (Remove if not needed)
-Router.onBeforeAction('aHook');
+// FlowRouter.triggers.enter([mustBeLoggedIn], {except: ["frontpage", "about"]});

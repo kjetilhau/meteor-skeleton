@@ -1,9 +1,16 @@
-Template.documentsIndex.rendered = function() {
-};
+Template.documentsIndex.onCreated(function() {
+  this.subscribe('documents');
+});
+
+Template.documentsIndex.onRendered(function() {
+});
+
+Template.documentsIndex.onDestroyed(function() {
+});
 
 Template.documentsIndex.helpers({
-  sayHello: function () {
-    return "Hallo!";
+  documents: function () {
+    return Documents.find({}, {sort: {createdAt: -1}});
   }
 });
 
@@ -14,7 +21,7 @@ Template.documentsIndex.events ({
 
     if (confirm("Are you sure?")) {
       Documents.remove(item._id);
-      console.log("Deleted!")
+      console.log("Document deleted")
     }
   }
 });

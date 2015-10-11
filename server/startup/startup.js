@@ -3,5 +3,5 @@
 // ***************************************************************
 
 Meteor.startup(function () {
-  // Do something
+  Fixtures.Documents.Create();
 });

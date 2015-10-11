@@ -1,5 +1,13 @@
 <template name="documentShow">
-  <h2>{{title}}</h2>
-  <p>{{content}}</p>
-  <a href="{{pathFor 'documentsIndex'}}">Back</a>
+
+  {{#if Template.subscriptionsReady}}
+    {{#with document}}
+      <h2>{{title}}</h2>
+      <p>{{content}}</p>
+      <a href="{{pathFor 'documentsIndex'}}" class="btn btn-default">Back</a>
+    {{/with}}
+  {{else}}
+    {{> loading}}
+  {{/if}}
+
 </template>

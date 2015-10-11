@@ -10,7 +10,7 @@ AutoForm.addHooks(['documentForm'], {
         console.log("Insert Error:", error);
       } else {
         console.log("Document inserted:", result);
-        Router.go('documentsIndex')
+        FlowRouter.go('documentsIndex');
       }
     },
     update: function(error) {
@@ -18,7 +18,7 @@ AutoForm.addHooks(['documentForm'], {
         console.log("Update Error:", error);
       } else {
         console.log("Document updated");
-        Router.go('documentsIndex')
+        FlowRouter.go('documentsIndex');
       }
     }
   }

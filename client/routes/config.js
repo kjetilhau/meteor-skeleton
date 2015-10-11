@@ -1,12 +1,12 @@
 // ***************************************************************
-// ROUTER CONFIGURATION
+// FLOW ROUTER CONFIG
 // ***************************************************************
 
-Router.configure({
-  layoutTemplate: 'layout',
-  notFoundTemplate: '404',
-  yieldTemplates: {
-    'header': { to: 'header' },
-    'footer': { to: 'footer' }
+// Not found route
+FlowRouter.notFound = {
+  // Subscriptions registered here don't have Fast Render support.
+  subscriptions: function() {},
+  action: function() {
+    BlazeLayout.render("layout", {header: "header", main: "404", footer: "footer"});
   }
-});
+};

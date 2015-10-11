@@ -9,10 +9,12 @@ Take a look at [meteor-skeleton.meteor.com](http://meteor-skeleton.meteor.com) f
 
 ## Packages used
 
-- meteor-platform
 - accounts-base
 - alanning:roles
-- iron:router
+- kadira:flow-router
+- kadira:blaze-layout
+- arillo:flow-router-helpers
+- zimme:active-route
 - aldeed:simple-schema
 - aldeed:collection2
 - aldeed:autoform

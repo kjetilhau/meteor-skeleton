@@ -1,8 +1,8 @@
 // ***************************************************************
-// LISTS (for use with Autoform)
+// LISTS (Example for use with Autoform)
 // ***************************************************************
 
-UI.registerHelper("colorOptions", function() {
+UI.registerHelper("colors", function() {
   return [
     {label: "#428bca", value: "#428bca"},
     {label: "#a4bdfc", value: "#a4bdfc"},

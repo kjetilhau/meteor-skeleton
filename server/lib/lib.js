@@ -1,3 +1,6 @@
 // ***************************************************************
-// COMMON HELPERS (server-side only)
+// Library only shared with server
 // ***************************************************************
+
+// Namespaces
+Fixtures = {};

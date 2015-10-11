@@ -1,5 +1,5 @@
 <template name="header">
-  <!-- Static navbar -->
+
   <div class="navbar navbar-default navbar-static-top" role="navigation">
     <div class="container">
       <div class="navbar-header">
@@ -13,14 +13,15 @@
       </div>
       <div class="navbar-collapse collapse">
         <ul class="nav navbar-nav">
-          <li class="{{active 'frontpage'}}"><a href="{{pathFor 'frontpage'}}">Home</a></li>
-          <li class="{{active 'documentsIndex'}}"><a href="{{pathFor 'documentsIndex'}}">Documents</a></li>
+          <li class="{{isActiveRoute 'frontpage'}}"><a href="{{pathFor 'frontpage'}}">Home</a></li>
+          <li class="{{isActiveRoute 'documentsIndex'}}"><a href="{{pathFor 'documentsIndex'}}">Documents</a></li>
         </ul>
         <ul class="nav navbar-nav navbar-right">
-          <li class="{{active 'about'}}"><a href="{{pathFor 'about'}}">About</a></li>
+          <li class="{{isActiveRoute 'about'}}"><a href="{{pathFor 'about'}}">About</a></li>
           <li><a href="https://github.com/kjetilhau/meteor-skeleton">Github</a></li>
         </ul>
       </div><!--/.nav-collapse -->
     </div>
   </div>
+
 </template>
