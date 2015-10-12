@@ -22,5 +22,5 @@ Template.documentEdit.helpers({
   }
 });
 
-Template.documentShow.events ({
+Template.documentEdit.events ({
 });
