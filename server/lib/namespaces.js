@@ -1,5 +1,5 @@
 // ***************************************************************
-// Library only shared with server
+// Namespaces (only shared with server)
 // ***************************************************************
 
 // Namespaces

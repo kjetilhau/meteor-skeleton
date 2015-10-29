@@ -10,4 +10,5 @@ function mustBeLoggedIn(context, redirect, stop) {
   }
 }
 
+// Uncomment to require the user to be logged in...
 // FlowRouter.triggers.enter([mustBeLoggedIn], {except: ["frontpage", "about"]});

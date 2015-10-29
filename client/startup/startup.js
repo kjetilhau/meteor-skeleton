@@ -1,5 +1,5 @@
 // ***************************************************************
-// STARTUP (Will run as soon as the DOM is ready)
+// ON CLIENT STARTUP
 // ***************************************************************
 
 Meteor.startup(function () {

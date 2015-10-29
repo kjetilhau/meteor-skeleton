@@ -2,7 +2,7 @@
 // LISTS (Example for use with Autoform)
 // ***************************************************************
 
-UI.registerHelper("colors", function() {
+Template.registerHelper("colors", function() {
   return [
     {label: "#428bca", value: "#428bca"},
     {label: "#a4bdfc", value: "#a4bdfc"},

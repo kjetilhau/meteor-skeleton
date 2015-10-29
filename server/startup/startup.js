@@ -1,5 +1,5 @@
 // ***************************************************************
-// STARTUP (Will run as soon as the server process is finished starting)
+// ON SERVER STARTUP
 // ***************************************************************
 
 Meteor.startup(function () {
