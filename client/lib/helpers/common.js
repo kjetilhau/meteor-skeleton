@@ -2,6 +2,8 @@
 // COMMON HELPERS (client-side only)
 // ***************************************************************
 
+import moment from "moment";
+
 // Cheap pluralization
 Template.registerHelper('pluralize', function(count, word) {
   return count === 1 ? '1 ' + word : count + ' ' + word + 's';
