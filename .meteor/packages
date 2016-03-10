@@ -5,7 +5,6 @@
 
 # Meteor core
 
-standard-minifiers
 meteor-base
 mobile-experience
 mongo
@@ -20,6 +19,7 @@ ejson
 spacebars
 check
 accounts-base
+ecmascript
 
 # Atmosphere
 
@@ -33,3 +33,5 @@ aldeed:simple-schema
 alanning:roles
 twbs:bootstrap
 momentjs:moment
+standard-minifier-css
+standard-minifier-js
