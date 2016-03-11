@@ -1,8 +1,8 @@
 Template.documentEdit.onCreated(function() {
-  var self = this;
-  self.autorun(function () {
-    var documentId = FlowRouter.getParam('documentId');
-    self.subscribe("document", documentId);
+  this.getDocumentId = () => FlowRouter.getParam('documentId');
+
+  this.autorun(() => {
+    this.subscribe('document', this.getDocumentId());
   });
 });
 
@@ -15,9 +15,8 @@ Template.documentEdit.onDestroyed(function() {
 });
 
 Template.documentEdit.helpers({
-  document: function () {
-    var documentId = FlowRouter.getParam('documentId');
-    var document = Documents.findOne({_id: documentId}) || {};
+  document() {
+    var document = Documents.findOne({_id: Template.instance().getDocumentId()}) || {};
     return document;
   }
 });

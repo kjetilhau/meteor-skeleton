@@ -1,0 +1,14 @@
+<template name="documentsIndexItem">
+
+  <tr>
+    <td><a href="{{pathFor 'documentShow' documentId=document._id}}">{{document.title}}</a></td>
+    <td>{{document.content}}</td>
+    <td>{{showTimeAgo document.updatedAt}}</td>
+    <td>{{showPrettyTimestamp document.createdAt}}</td>
+    <td>
+      <a class="btn btn-xs btn-default" href="{{pathFor 'documentEdit' documentId=document._id}}" role="button">Edit</a>
+      <a class="btn btn-xs btn-danger delete-document" href="#" role="button">Delete</a>
+    </td>
+  </tr>
+
+</template>

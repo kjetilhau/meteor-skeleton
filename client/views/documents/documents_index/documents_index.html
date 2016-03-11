@@ -18,17 +18,8 @@
             </tr>
             </thead>
             <tbody>
-            {{#each documents}}
-              <tr>
-                <td><a href="{{pathFor 'documentShow' documentId=_id}}">{{title}}</a></td>
-                <td>{{content}}</td>
-                <td>{{showTimeAgo updatedAt}}</td>
-                <td>{{showPrettyTimestamp createdAt}}</td>
-                <td>
-                  <a class="btn btn-xs btn-default" href="{{pathFor 'documentEdit' documentId=_id}}" role="button">Edit</a>
-                  <a class="btn btn-xs btn-danger delete-document" href="#" role="button">Delete</a>
-                </td>
-              </tr>
+            {{#each document in documents}}
+              {{> documentsIndexItem document=document}}
             {{/each}}
             </tbody>
           </table>
