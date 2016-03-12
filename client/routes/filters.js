@@ -2,13 +2,15 @@
 // ROUTER FILTERS & TRIGGERS
 // ***************************************************************
 
-function mustBeLoggedIn(context, redirect, stop) {
+// Simple redirect unless user is logged in
+let mustBeLoggedIn = (context, redirect, stop) => {
   if (!Meteor.userId()) {
-    // if the user is not logged in, render the front page
     redirect('frontpage');
     console.log("Must be logged in!");
   }
 }
 
-// Uncomment to require the user to be logged in...
+// Uncomment to require the user to be logged in to view og modify documents
+// Note: This is only handled client-side. Remember to do verifications on the server as well
+
 // FlowRouter.triggers.enter([mustBeLoggedIn], {except: ["frontpage", "about"]});

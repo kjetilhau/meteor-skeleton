@@ -2,7 +2,7 @@
 // DOCUMENT Schema
 // ***************************************************************
 
-DocumentSchema = new SimpleSchema({
+let DocumentSchema = new SimpleSchema({
   title: {
     type: String,
     label: "Title",
@@ -71,3 +71,5 @@ DocumentSchema.messages({
   ],
   keyNotInSchema: "[key] is not allowed by the schema"
 });
+
+export default DocumentSchema;

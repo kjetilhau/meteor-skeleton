@@ -2,6 +2,6 @@
 // ON CLIENT STARTUP
 // ***************************************************************
 
-Meteor.startup(function () {
+Meteor.startup( () => {
   // Do something
 });

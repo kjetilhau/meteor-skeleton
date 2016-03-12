@@ -1,5 +1,5 @@
 // ***************************************************************
-// PUBLICATIONS (For Documents collection)
+// PUBLICATIONS (For the documents collection)
 // ***************************************************************
 
 // DOCUMENTS INDEX

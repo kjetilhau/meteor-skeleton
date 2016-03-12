@@ -4,7 +4,7 @@
 
 Fixtures.Documents = {};
 
-Fixtures.Documents.Create = function () {
+Fixtures.Documents.Create = () => {
   if (Documents.find().count() === 0) {
     Documents.insert({
       title: "Derp",

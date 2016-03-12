@@ -1,7 +1,7 @@
 // ***************************************************************
-// ON SERVER STARTUP
+// ON SERVER & CLIENT STARTUP
 // ***************************************************************
 
 Meteor.startup( () => {
-  Fixtures.Documents.Create();
+  // Do something
 });

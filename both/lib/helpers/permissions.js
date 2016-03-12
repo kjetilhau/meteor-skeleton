@@ -3,17 +3,17 @@
 // ***************************************************************
 
 // If the user owns the item, give permission
-canEditItem = function (userId, item) {
+canEditItem = (userId, item) => {
   return userId === item.userId;
-}
+};
 
 // If the user owns the item, give permission
-canRemoveItem = function (userId, item) {
+canRemoveItem = (userId, item) => {
   return userId === item.userId;
-}
+};
 
 // Checks whether selected user or current user is admin (with the Roles package)
-isAdmin = function (user) {
+isAdmin = (user) => {
   user = (typeof user === 'undefined') ? Meteor.user() : user;
   return !!user && !!Roles.userIsInRole(user, ['admin']);
-}
+};
