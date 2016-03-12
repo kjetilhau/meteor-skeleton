@@ -16,7 +16,7 @@ Template.documentEdit.onDestroyed(function() {
 
 Template.documentEdit.helpers({
   document() {
-    var document = Documents.findOne({_id: Template.instance().getDocumentId()}) || {};
+    let document = Documents.findOne({_id: Template.instance().getDocumentId()}) || {};
     return document;
   }
 });

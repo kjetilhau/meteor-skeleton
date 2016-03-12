@@ -14,7 +14,7 @@ Template.documentShow.onDestroyed(function() {
 
 Template.documentShow.helpers({
   document() {
-    var document = Documents.findOne({_id: Template.instance().getDocumentId()}) || {};
+    let document = Documents.findOne({_id: Template.instance().getDocumentId()}) || {};
     return document;
   }
 });

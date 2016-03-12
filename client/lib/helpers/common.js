@@ -31,7 +31,7 @@ Template.registerHelper('showPrettyTimestamp', (date) => {
 
 // Get profile image or placeholder image
 Template.registerHelper('getProfileImage', (image) => {
-  var imagePlaceholder = "/img/profile_placeholder.png";
+  let imagePlaceholder = "/img/profile_placeholder.png";
   if (!image || image === "") {
     return imagePlaceholder;
   }
@@ -46,9 +46,9 @@ Template.registerHelper('bytesToSize', (bytes) => {
     return ("");
   }
   else {
-    var sizes = ['Bytes', 'KB', 'MB', 'GB', 'TB'];
+    let sizes = ['Bytes', 'KB', 'MB', 'GB', 'TB'];
     if (bytes == 0) return 'n/a';
-    var i = parseInt(Math.floor(Math.log(bytes) / Math.log(1024)));
+    let i = parseInt(Math.floor(Math.log(bytes) / Math.log(1024)));
     return Math.round(bytes / Math.pow(1024, i), 2) + ' ' + sizes[i];
   }
 });
