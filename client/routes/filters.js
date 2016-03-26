@@ -6,7 +6,7 @@
 let mustBeLoggedIn = (context, redirect, stop) => {
   if (!Meteor.userId()) {
     redirect('frontpage');
-    console.log("Must be logged in!");
+    Bert.alert( 'Must be logged in!', 'danger');
   }
 }
 

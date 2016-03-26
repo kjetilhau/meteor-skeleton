@@ -1,6 +1,6 @@
 <template name="documentsIndexItem">
 
-  <tr>
+  <tr class="documents-index-item">
     <td><a href="{{pathFor 'documentShow' documentId=document._id}}">{{document.title}}</a></td>
     <td>{{document.content}}</td>
     <td>{{showTimeAgo document.updatedAt}}</td>

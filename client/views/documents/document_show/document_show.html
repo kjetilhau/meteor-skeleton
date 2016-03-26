@@ -1,6 +1,7 @@
 <template name="documentShow">
 
-  {{#if Template.subscriptionsReady}}
+  <div class="document-show">
+    {{#if Template.subscriptionsReady}}
       <h2>{{document.title}}</h2>
       <p>{{document.content}}</p>
       <p class="text-muted">
@@ -10,8 +11,9 @@
         Created: {{showPrettyTimestamp document.createdAt}}
       </p>
       <a href="{{pathFor 'documentsIndex'}}" class="btn btn-default">Back</a>
-  {{else}}
-    {{> loader}}
-  {{/if}}
+    {{else}}
+      {{> loader}}
+    {{/if}}
+  </div>
 
 </template>

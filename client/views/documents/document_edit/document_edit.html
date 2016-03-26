@@ -1,20 +1,22 @@
 <template name="documentEdit">
 
-  {{#if Template.subscriptionsReady}}
-    {{#with document}}
-      <h2>Edit document</h2>
+  <div class="document-edit">
+    {{#if Template.subscriptionsReady}}
+      {{#with document}}
+        <h2>Edit document</h2>
 
-      {{#autoForm collection="Documents" doc=this id="documentEditForm" type="method-update" meteormethod="documents.update"}}
-        <fieldset>
-          {{> afQuickField name='title'}}
-          {{> afQuickField name='content' rows=6}}
-        </fieldset>
-        <button type="submit" class="btn btn-primary">Update</button>
-        <a class="btn btn-link" role="button" href="{{pathFor 'documentsIndex'}}">Back</a>
-      {{/autoForm}}
-    {{/with}}
-  {{else}}
-    {{> loader}}
-  {{/if}}
+        {{#autoForm collection="Documents" doc=this id="documentEditForm" type="method-update" meteormethod="documents.update"}}
+          <fieldset>
+            {{> afQuickField name='title'}}
+            {{> afQuickField name='content' rows=6}}
+          </fieldset>
+          <button type="submit" class="btn btn-primary">Update</button>
+          <a class="btn btn-link" role="button" href="{{pathFor 'documentsIndex'}}">Back</a>
+        {{/autoForm}}
+      {{/with}}
+    {{else}}
+      {{> loader}}
+    {{/if}}
+  </div>
 
 </template>

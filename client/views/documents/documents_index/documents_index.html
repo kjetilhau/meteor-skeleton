@@ -1,36 +1,33 @@
 <template name="documentsIndex">
 
-  <div class="row">
-    <div class="col-md-12">
-      <h1>Documents</h1>
-      <a class="btn btn-primary" href="{{pathFor 'documentNew'}}" role="button">New document</a>
+  <div class="documents-index">
+    <h1>Documents</h1>
+    <a class="btn btn-primary" href="{{pathFor 'documentNew'}}" role="button">New document</a>
 
-      {{#if Template.subscriptionsReady}}
-        {{#if documents}}
-          <table class="table table-striped">
-            <thead>
-            <tr>
-              <th>Title</th>
-              <th>Content</th>
-              <th>Updated</th>
-              <th>Created</th>
-              <th class="text-right">Actions</th>
-            </tr>
-            </thead>
-            <tbody>
-            {{#each document in documents}}
-              {{> documentsIndexItem document=document}}
-            {{/each}}
-            </tbody>
-          </table>
-        {{else}}
-          <p>No documents yet.</p>
-        {{/if}}
+    {{#if Template.subscriptionsReady}}
+      {{#if documents}}
+        <table class="table table-striped">
+          <thead>
+          <tr>
+            <th>Title</th>
+            <th>Content</th>
+            <th>Updated</th>
+            <th>Created</th>
+            <th class="text-right">Actions</th>
+          </tr>
+          </thead>
+          <tbody>
+          {{#each document in documents}}
+            {{> documentsIndexItem document=document}}
+          {{/each}}
+          </tbody>
+        </table>
       {{else}}
-        {{> loader}}
+        <p>No documents yet.</p>
       {{/if}}
-
-    </div>
+    {{else}}
+      {{> loader}}
+    {{/if}}
   </div>
 
 </template>
