@@ -33,5 +33,6 @@ aldeed:autoform
 aldeed:collection2
 aldeed:simple-schema
 alanning:roles
-twbs:bootstrap
 themeteorchef:bert
+fourseven:scss
+reywood:bootstrap3-sass
