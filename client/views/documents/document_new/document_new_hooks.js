@@ -9,8 +9,8 @@ AutoForm.addHooks(['documentNewForm'], {
       if (error) {
         console.log("Insert Error:", error.reason);
       } else {
-        console.log("Document inserted: ", result);
         FlowRouter.go('documentsIndex');
+        Bert.alert( 'Document inserted!', 'success');
       }
     }
   }

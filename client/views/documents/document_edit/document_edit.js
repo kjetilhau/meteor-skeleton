@@ -7,8 +7,6 @@ Template.documentEdit.onCreated(function() {
 });
 
 Template.documentEdit.onRendered(function() {
-  // Reset form validations
-  AutoForm.resetForm('documentForm');
 });
 
 Template.documentEdit.onDestroyed(function() {

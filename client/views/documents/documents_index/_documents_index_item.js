@@ -21,7 +21,7 @@ Template.documentsIndexItem.events ({
           console.log(error.reason)
         }
         else {
-          console.log("Document deleted");
+          Bert.alert( 'Document deleted!', 'danger');
         }
       });
     }

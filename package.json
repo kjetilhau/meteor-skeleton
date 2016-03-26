@@ -1,0 +1,10 @@
+{
+  "name": "app-name",
+  "version": "1.0.0",
+  "description": "App description.",
+  "scripts": {},
+  "devDependencies": {},
+  "dependencies": {
+    "moment": "^2.12.0"
+  }
+}

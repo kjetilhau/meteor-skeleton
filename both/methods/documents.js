@@ -11,7 +11,7 @@ Meteor.methods({
 
     // Additional validation here...
 
-    Documents.insert(doc, function(error, result) {
+    return Documents.insert(doc, function(error, result) {
       if (error) {
         console.log(error);
       }
@@ -21,7 +21,7 @@ Meteor.methods({
   "documents.update": (doc, documentId) => {
     check(doc, DocumentSchema);
 
-    Documents.update(documentId, doc, function(error, result) {
+    return Documents.update(documentId, doc, function(error, result) {
       if (error) {
         console.log(error);
       }
@@ -31,7 +31,7 @@ Meteor.methods({
   "documents.delete": (documentId) => {
     check(documentId, String);
 
-    Documents.remove(documentId, function(error, result) {
+    return Documents.remove(documentId, function(error, result) {
       if (error) {
         console.log(error);
       }

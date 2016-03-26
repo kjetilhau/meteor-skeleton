@@ -9,8 +9,8 @@ AutoForm.addHooks(['documentEditForm'], {
       if (error) {
         console.log("Update Error:", error.reason);
       } else {
-        console.log("Document updated: ", result);
         FlowRouter.go('documentsIndex');
+        Bert.alert( 'Document updated!');
       }
     }
   }
