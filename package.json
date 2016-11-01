@@ -1,5 +1,5 @@
 {
-  "name": "ms-14",
+  "name": "Meteor-skeleton",
   "private": true,
   "scripts": {
     "start": "meteor run"

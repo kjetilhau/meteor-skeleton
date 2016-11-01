@@ -9,6 +9,8 @@ Take a look at [meteor-skeleton.meteor.com](http://meteor-skeleton.meteor.com) f
 
 ## Packages used
 
+### Meteor
+
 - accounts-base
 - alanning:roles
 - kadira:flow-router
@@ -18,10 +20,11 @@ Take a look at [meteor-skeleton.meteor.com](http://meteor-skeleton.meteor.com) f
 - aldeed:simple-schema
 - aldeed:collection2
 - aldeed:autoform
-- momentjs:moment
 - twbs:bootstrap
 
 The Meteor packages 'autopublish' and 'insecure' are removed by default.
+
+### NPM
 
 ## Usage
 1. Clone it: ```git clone https://github.com/kjetilhau/meteor-skeleton.git```

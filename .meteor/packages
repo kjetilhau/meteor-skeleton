@@ -33,3 +33,6 @@ alanning:roles
 themeteorchef:bert
 fourseven:scss
 reywood:bootstrap3-sass
+
+# V2.15.2 is bugged
+# momentjs:moment@=2.15.1
