@@ -1,5 +1,6 @@
 import { Meteor } from 'meteor/meteor';
 import { Lists } from '../documents.js';
+import { Documents } from '../documents.js'
 
 // ***************************************************************
 // PUBLICATIONS (For the documents collection)

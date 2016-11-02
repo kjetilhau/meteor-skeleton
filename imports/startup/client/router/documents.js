@@ -5,6 +5,10 @@ import { BlazeLayout } from 'meteor/kadira:blaze-layout';
 // import '../../ui/layouts/app-body.js';
 // import '../../ui/pages/root-redirector.js';
  import '../../../ui/components/documents/documents_index/documents_index.js';
+ import '../../../ui/components/documents/document_new/document_new.js';
+ import '../../../ui/components/documents/document_show/document_show.js';
+ import '../../../ui/components/documents/document_edit/document_edit.js';
+
 // import '../../ui/pages/app-not-found.js';
 
 // ***************************************************************
