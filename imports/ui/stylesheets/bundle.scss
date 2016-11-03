@@ -1,0 +1,31 @@
+/* Style bundle
+-------------------------------------------------- */
+
+// Base
+@import "{}/imports/ui/stylesheets/common.scss";
+@import "{}/imports/ui/stylesheets/helpers.scss";
+
+// Layouts
+@import "{}/imports/ui/layouts/layout.scss";
+
+// Shared
+@import "{}/imports/ui/shared/header.scss";
+@import "{}/imports/ui/shared/footer.scss";
+@import "{}/imports/ui/shared/error_404.scss";
+@import "{}/imports/ui/shared/loader.scss";
+
+// Pages
+@import "{}/imports/ui/pages/frontpage.scss";
+@import "{}/imports/ui/pages/about.scss";
+
+// Components
+@import "{}/imports/ui/components/documents/documents_index/documents_index.scss";
+@import "{}/imports/ui/components/documents/document_show/document_show.scss";
+@import "{}/imports/ui/components/documents/document_edit/document_edit.scss";
+@import "{}/imports/ui/components/documents/document_new/document_new.scss";
+
+// Bootstrap theme
+@import "{}/imports/ui/stylesheets/theme/bootstrap_variables.scss";
+
+// Bootstrap SASS library
+@import '{reywood:bootstrap3-sass}/bootstrap';
