@@ -19,4 +19,4 @@ import '../../ui/helpers/common.js';
 import '../../ui/helpers/lists.js';
 
 // Notifications
-import '../../ui/helpers/bert.js';
+import './bert.js';

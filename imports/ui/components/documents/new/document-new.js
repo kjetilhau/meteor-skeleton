@@ -4,7 +4,7 @@ import { Mongo } from 'meteor/mongo';
 import { Tracker } from 'meteor/tracker';
 import { $ } from 'meteor/jquery';
 
-import { Documents } from '/imports/api/documents/documents.js';
+import { Documents } from '/imports/api/documents/both/documents.js';
 
 import './document-new.html';
 import './document-new-hooks.js';

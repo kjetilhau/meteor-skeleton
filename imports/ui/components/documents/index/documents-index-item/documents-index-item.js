@@ -22,7 +22,9 @@ Template.documentsIndexItem.events ({
     event.preventDefault();
 
     if (confirm("Are you sure?")) {
-      Meteor.call('documents.delete', Template.instance().getDocumentId(), function (error, result) {
+      var documentId = Template.instance().getDocumentId();
+
+      Meteor.call('documents.delete', documentId, function (error, result) {
         if (error) {
           console.log(error.reason)
         }

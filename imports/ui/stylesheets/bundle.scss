@@ -19,10 +19,10 @@
 @import "{}/imports/ui/pages/about.scss";
 
 // Components
-@import "{}/imports/ui/components/documents/documents-index/documents-index.scss";
-@import "{}/imports/ui/components/documents/document-show/document-show.scss";
-@import "{}/imports/ui/components/documents/document-edit/document-edit.scss";
-@import "{}/imports/ui/components/documents/document-new/document-new.scss";
+@import "{}/imports/ui/components/documents/index/documents-index.scss";
+@import "{}/imports/ui/components/documents/show/document-show.scss";
+@import "{}/imports/ui/components/documents/edit/document-edit.scss";
+@import "{}/imports/ui/components/documents/new/document-new.scss";
 
 // Bootstrap theme
 @import "{}/imports/ui/stylesheets/theme/bootstrap_variables.scss";

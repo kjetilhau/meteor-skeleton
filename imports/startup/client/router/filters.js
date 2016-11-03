@@ -1,9 +1,9 @@
+import { FlowRouter } from 'meteor/kadira:flow-router';
+import { BlazeLayout } from 'meteor/kadira:blaze-layout';
+
 // ***************************************************************
 // Route filters & triggers
 // ***************************************************************
-
-import { FlowRouter } from 'meteor/kadira:flow-router';
-import { BlazeLayout } from 'meteor/kadira:blaze-layout';
 
 // Simple redirect unless user is logged in
 let mustBeLoggedIn = (context, redirect, stop) => {

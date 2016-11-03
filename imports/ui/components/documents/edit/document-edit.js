@@ -5,7 +5,7 @@ import { Tracker } from 'meteor/tracker';
 import { $ } from 'meteor/jquery';
 import { SimpleSchema } from 'meteor/aldeed:simple-schema';
 
-import { Documents } from '/imports/api/documents/documents.js';
+import { Documents } from '/imports/api/documents/both/documents.js';
 
 import './document-edit.html';
 import './document-edit-hooks.js';
@@ -14,7 +14,7 @@ Template.documentEdit.onCreated(function() {
   this.getDocumentId = () => FlowRouter.getParam('documentId');
 
   this.autorun(() => {
-    this.subscribe('document', this.getDocumentId());
+    this.subscribe('documents.single', this.getDocumentId());
   });
 });
 

@@ -1,10 +1,9 @@
 // ***************************************************************
-// BERT
+// Bert notification configuration
 // ***************************************************************
 
+// Set notification defaults
 Meteor.startup( () => {
-
-  // Set notification defaults
   Bert.defaults = {
     hideDelay: 3500,
     // Accepts: a number in milliseconds.
@@ -14,5 +13,4 @@ Meteor.startup( () => {
     type: 'info'
     // Accepts: default, success, info, warning, danger.
   };
-
 });

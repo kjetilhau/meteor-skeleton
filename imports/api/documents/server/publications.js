@@ -1,6 +1,5 @@
 import { Meteor } from 'meteor/meteor';
-import { Lists } from '../documents.js';
-import { Documents } from '../documents.js'
+import { Documents } from '../both/documents.js'
 
 // ***************************************************************
 // PUBLICATIONS (For the documents collection)
@@ -8,12 +7,12 @@ import { Documents } from '../documents.js'
 
 // DOCUMENTS INDEX
 // -------------------------------------------------------
-Meteor.publish('documents', function documents() {
+Meteor.publish('documents.all', function documentsAll() {
   return Documents.find();
 });
 
 // DOCUMENT SHOW
 // -------------------------------------------------------
-Meteor.publish('document', function document(id) {
+Meteor.publish('documents.single', function documentsSingle(id) {
   return Documents.find(id);
 });

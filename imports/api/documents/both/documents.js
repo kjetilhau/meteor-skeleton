@@ -7,7 +7,7 @@ import DocumentSchema from './schemas/document';
 // DOCUMENTS Collection
 // ***************************************************************
 
-export const Documents = new Mongo.Collection('documents');
+export const Documents = new Mongo.Collection('Documents');
 
 // We use explicit methods, so deny everything
 Documents.allow({
