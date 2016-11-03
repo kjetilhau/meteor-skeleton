@@ -11,7 +11,7 @@
 // Shared
 @import "{}/imports/ui/shared/header.scss";
 @import "{}/imports/ui/shared/footer.scss";
-@import "{}/imports/ui/shared/error_404.scss";
+@import "{}/imports/ui/shared/error-404.scss";
 @import "{}/imports/ui/shared/loader.scss";
 
 // Pages
@@ -19,10 +19,10 @@
 @import "{}/imports/ui/pages/about.scss";
 
 // Components
-@import "{}/imports/ui/components/documents/documents_index/documents_index.scss";
-@import "{}/imports/ui/components/documents/document_show/document_show.scss";
-@import "{}/imports/ui/components/documents/document_edit/document_edit.scss";
-@import "{}/imports/ui/components/documents/document_new/document_new.scss";
+@import "{}/imports/ui/components/documents/documents-index/documents-index.scss";
+@import "{}/imports/ui/components/documents/document-show/document-show.scss";
+@import "{}/imports/ui/components/documents/document-edit/document-edit.scss";
+@import "{}/imports/ui/components/documents/document-new/document-new.scss";
 
 // Bootstrap theme
 @import "{}/imports/ui/stylesheets/theme/bootstrap_variables.scss";

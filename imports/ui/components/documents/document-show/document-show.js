@@ -6,7 +6,7 @@ import { $ } from 'meteor/jquery';
 
 import { Documents } from '/imports/api/documents/documents.js';
 
-import './document_show.html';
+import './document-show.html';
 
 Template.documentShow.onCreated(function() {
   this.getDocumentId = () => FlowRouter.getParam('documentId');

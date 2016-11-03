@@ -1,7 +1,6 @@
 // ***************************************************************
-// Meteor accounts configuration (client-side)
+// Bundle for server modules
 // ***************************************************************
 
-//Accounts.ui.config({
-//    passwordSignupFields: 'EMAIL_ONLY'
-//});
+import './fixtures.js';
+import './register-api.js';

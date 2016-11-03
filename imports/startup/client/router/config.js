@@ -2,7 +2,7 @@ import { FlowRouter } from 'meteor/kadira:flow-router';
 import { BlazeLayout } from 'meteor/kadira:blaze-layout';
 
 // ***************************************************************
-// FLOW ROUTER CONFIGURATION
+// Flow Router configuration
 // ***************************************************************
 
 // Not found route

@@ -7,8 +7,8 @@ import { SimpleSchema } from 'meteor/aldeed:simple-schema';
 
 import { Documents } from '/imports/api/documents/documents.js';
 
-import './document_edit.html';
-import './document_edit_hooks.js';
+import './document-edit.html';
+import './document-edit-hooks.js';
 
 Template.documentEdit.onCreated(function() {
   this.getDocumentId = () => FlowRouter.getParam('documentId');

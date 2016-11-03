@@ -6,10 +6,8 @@ import { $ } from 'meteor/jquery';
 
 import { Documents } from '/imports/api/documents/documents.js';
 
-import './documents_index.html';
-
-// Component used in the template
-import './_documents_index_item.js';
+import './documents-index.html';
+import './documents-index-item/documents-index-item.js';
 
 Template.documentsIndex.onCreated(function() {
   this.subscribe('documents');

@@ -1,9 +1,9 @@
+// ***************************************************************
+// Route filters & triggers
+// ***************************************************************
+
 import { FlowRouter } from 'meteor/kadira:flow-router';
 import { BlazeLayout } from 'meteor/kadira:blaze-layout';
-
-// ***************************************************************
-// ROUTER FILTERS & TRIGGERS
-// ***************************************************************
 
 // Simple redirect unless user is logged in
 let mustBeLoggedIn = (context, redirect, stop) => {
@@ -14,6 +14,6 @@ let mustBeLoggedIn = (context, redirect, stop) => {
 }
 
 // Uncomment to require the user to be logged in to view og modify documents
-// Note: This is only handled client-side. Remember to do verifications on the server as well
+// Note: This is only handled client-side. Remember to do verification on the server as well
 
 // FlowRouter.triggers.enter([mustBeLoggedIn], {except: ["frontpage", "about"]});

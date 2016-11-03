@@ -1,19 +1,14 @@
+// ***************************************************************
+// Document routes
+// ***************************************************************
+
 import { FlowRouter } from 'meteor/kadira:flow-router';
 import { BlazeLayout } from 'meteor/kadira:blaze-layout';
 
-// // Import to load these templates
-// import '../../ui/layouts/app-body.js';
-// import '../../ui/pages/root-redirector.js';
- import '../../../ui/components/documents/documents_index/documents_index.js';
- import '../../../ui/components/documents/document_new/document_new.js';
- import '../../../ui/components/documents/document_show/document_show.js';
- import '../../../ui/components/documents/document_edit/document_edit.js';
-
-// import '../../ui/pages/app-not-found.js';
-
-// ***************************************************************
-// ROUTES (Documents)
-// ***************************************************************
+import '../../../ui/components/documents/documents-index/documents-index.js';
+import '../../../ui/components/documents/document-new/document-new.js';
+import '../../../ui/components/documents/document-show/document-show.js';
+import '../../../ui/components/documents/document-edit/document-edit.js';
 
 // DOCUMENTS INDEX
 // -------------------------------------------------------

@@ -6,8 +6,8 @@ import { $ } from 'meteor/jquery';
 
 import { Documents } from '/imports/api/documents/documents.js';
 
-import './document_new.html';
-import './document_new_hooks.js';
+import './document-new.html';
+import './document-new-hooks.js';
 
 Template.documentNew.onCreated(function() {
 });

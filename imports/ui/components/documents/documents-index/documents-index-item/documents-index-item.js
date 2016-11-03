@@ -2,7 +2,7 @@ import { Meteor } from 'meteor/meteor';
 import { Template } from 'meteor/templating';
 import { $ } from 'meteor/jquery';
 
-import './_documents_index_item.html';
+import './documents-index-item.html';
 
 Template.documentsIndexItem.onCreated(function() {
   this.getDocumentId = () => Template.instance().data.document._id;

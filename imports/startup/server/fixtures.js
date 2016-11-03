@@ -1,9 +1,9 @@
-import { Meteor } from 'meteor/meteor';
-import { Documents } from '../../api/documents/documents.js';
-
 // ***************************************************************
 // FIXTURES (generate dummy data for the Documents collection)
 // ***************************************************************
+
+import { Meteor } from 'meteor/meteor';
+import { Documents } from '../../api/documents/documents.js';
 
 Meteor.startup(() => {
   if (Documents.find().count() === 0) {
