@@ -9,8 +9,9 @@ Take a look at [meteor-skeleton.meteor.com](http://meteor-skeleton.meteor.com) f
 
 ## Packages used
 
-### Meteor
+### Atmosphere
 
+- blaze-html-templates
 - accounts-base
 - alanning:roles
 - kadira:flow-router
@@ -20,7 +21,13 @@ Take a look at [meteor-skeleton.meteor.com](http://meteor-skeleton.meteor.com) f
 - aldeed:simple-schema
 - aldeed:collection2
 - aldeed:autoform
-- twbs:bootstrap
+- fourseven:scss
+- themeteorchef:bert
+
+### NPM
+
+- bootstrap-sass
+- moment
 
 The Meteor packages 'autopublish' and 'insecure' are removed by default.
 

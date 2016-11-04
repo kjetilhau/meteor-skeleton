@@ -73,7 +73,6 @@ reactive-dict@1.1.8
 reactive-var@1.0.11
 reload@1.1.11
 retry@1.0.9
-reywood:bootstrap3-sass@3.3.5_2
 routepolicy@1.0.12
 service-configuration@1.0.11
 session@1.1.7
