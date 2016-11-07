@@ -3,7 +3,7 @@ A boilerplate for Meteor - giving you a simple and more organized way to create 
 
 It comes with a complete collection sample including publications, subscriptions and CRUD functionality. Routes, views and some nice helpers are also included.
 
-Take a look at [meteor-skeleton.meteor.com](http://meteor-skeleton.meteor.com) for a live sample.
+Take a look at [meteorskeleton.herokuapp.com](https://meteorskeleton.herokuapp.com) for a demo.
 
 ![Meteor-skeleton](http://i.imgur.com/ETTVDTM.png)
 
@@ -74,5 +74,4 @@ server/							# Server code
 
 ## Other great boilerplates
 - [meteor-boilerplate](https://github.com/matteodem/meteor-boilerplate) by matteodem
-- [Void](https://github.com/SachaG/Void) by Sacha Greif
-- [meteor-boilerplate](https://github.com/BeDifferential/meteor-boilerplate) by BeDifferential
+- [meteor-boilerplate](https://github.com/Differential/meteor-boilerplate) by Differential
