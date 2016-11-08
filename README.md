@@ -5,7 +5,7 @@ It comes with a complete collection sample including publications, subscriptions
 
 Take a look at [meteorskeleton.herokuapp.com](https://meteorskeleton.herokuapp.com) for a demo.
 
-![Meteor-skeleton](http://i.imgur.com/ETTVDTM.png)
+![Meteor-skeleton](http://i.imgur.com/Soq1xnF.png)
 
 ## Packages used
 
@@ -43,33 +43,37 @@ The Meteor packages 'autopublish' and 'insecure' are removed by default.
 ## Structure
 
 ```
-client/							# Client code
-  config/						# Configuration files
-  lib/							# Library files that get executed first
-    helpers/ 					# Helpers that helps you and yours
-  routes/						# Everything related to client-side routing
-  startup/						# Stuff that gets launched at client load
-  stylesheets/					# CSS/LESS/SCSS files
-    components/					# Styles for specific components
-    sites/						# Styles for sites and collections
-  subscriptions/				# Collection subscriptions that are not defined in routes
-  views/						# View templates
-    documents/					# Views related to the Documents collection
-    layouts/					# Layout files defined with Iron Router
-    pages/						# Views for static pages
-    shared/						# Usually templates that are shared between views
-lib/							# Code shared with client and server files
-  collections/					# Collection files, separate files for each collection
-  helpers/						# Helpers that is accessible on both client and server
-public/							# Public files
-  img/							# Static image folder
-  fonts/						# Static fonts folder
-server/							# Server code
-  config/						# Server configuration files
-  fixtures/						# Fixtures for defining pre-loaded data
-  lib/							# Server-side library folder
-  publications/					# Collection publications, separate files for each collection
-  startup/						# Stuff that gets launched at server startup
+client
+import
+  api/
+    documents/
+      both/
+        schemas/
+      server/
+  modules/
+  startup/
+    both/
+    client/
+      router/
+    server/
+  ui/
+    components/
+      documents/
+        edit/
+        index/
+          documents-index-item/
+        new/
+        show/
+    helpers/
+    layouts/
+    pages/
+    shared/
+    stylesheets/
+      theme/
+public
+  img/
+  fonts/
+server
 ```
 
 ## Other great boilerplates
