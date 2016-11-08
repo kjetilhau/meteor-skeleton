@@ -34,11 +34,11 @@ The Meteor packages 'autopublish' and 'insecure' are removed by default.
 ### NPM
 
 ## Usage
-1. Clone it: ```git clone https://github.com/kjetilhau/meteor-skeleton.git```
-2. ```cd meteor-skeleton```
+1. Clone it: `git clone https://github.com/kjetilhau/meteor-skeleton.git`
+2. `cd meteor-skeleton`
 3. Remove the .git folder
-4. ```git init```
-6. ```meteor```
+4. `git init`
+6. `meteor`
 
 ## Structure
 
