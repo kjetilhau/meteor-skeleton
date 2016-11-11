@@ -1,4 +1,6 @@
 import { Meteor } from 'meteor/meteor';
+import { check } from 'meteor/check';
+
 import { Documents } from '../both/documents.js'
 
 // ***************************************************************
@@ -14,5 +16,6 @@ Meteor.publish('documents.all', function documentsAll() {
 // DOCUMENT SHOW
 // -------------------------------------------------------
 Meteor.publish('documents.single', function documentsSingle(id) {
+  check(id, String);
   return Documents.find(id);
 });
