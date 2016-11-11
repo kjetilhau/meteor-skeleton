@@ -18,9 +18,9 @@ es5-shim@4.6.15                # ECMAScript 5 compatibility for older browsers.
 ecmascript@0.5.9              # Enable ECMAScript2015+ syntax in app code
 shell-server@0.2.1            # Server-side component of the `meteor shell` command
 
-accounts-base
-check
-logging
+accounts-base@1.2.14
+check@1.2.4
+logging@1.1.16
 
 kadira:flow-router
 kadira:blaze-layout
