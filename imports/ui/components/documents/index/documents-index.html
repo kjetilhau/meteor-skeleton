@@ -5,25 +5,25 @@
     <a class="btn btn-primary" href="{{pathFor 'documentNew'}}" role="button">New document</a>
 
     {{#if Template.subscriptionsReady}}
-      {{#if documents}}
-        <table class="table table-striped">
+      {{#if documents.count}}
+        <table class="table table-striped mt-10">
           <thead>
-          <tr>
-            <th>Title</th>
-            <th>Content</th>
-            <th>Updated</th>
-            <th>Created</th>
-            <th class="text-right">Actions</th>
-          </tr>
+            <tr>
+              <th>Title</th>
+              <th>Content</th>
+              <th>Updated</th>
+              <th>Created</th>
+              <th class="text-right">Actions</th>
+            </tr>
           </thead>
           <tbody>
-          {{#each document in documents}}
-            {{> documentsIndexItem document=document}}
-          {{/each}}
+            {{#each document in documents}}
+              {{> documentsIndexItem document=document}}
+            {{/each}}
           </tbody>
         </table>
       {{else}}
-        <p>No documents yet.</p>
+        {{> emptyResult text="No documents added yet" description="Click the button to add some..." icon="fa fa-frown-o"}}
       {{/if}}
     {{else}}
       {{> loader}}

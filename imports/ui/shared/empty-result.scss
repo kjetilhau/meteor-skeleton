@@ -1,0 +1,29 @@
+/* Empty result
+-------------------------------------------------- */
+
+.empty-result {
+  text-align: center;
+  padding: 30px;
+  margin: 20px;
+  border: 3px dashed #e4e4e4;
+  border-radius: 5px;
+}
+
+.empty-result__icon {
+  font-size: 9rem;
+  color: #D0D0D0;
+}
+
+.empty-result__image {
+  margin-bottom: -5px;
+}
+
+.empty-result__heading {
+  font-weight: 600;
+  letter-spacing: -1px;
+}
+
+.empty-result__description {
+  font-size: 1.9rem;
+  color: #9f9f9f;
+}
