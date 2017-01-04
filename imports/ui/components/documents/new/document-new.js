@@ -4,18 +4,18 @@ import { Mongo } from 'meteor/mongo';
 import { Tracker } from 'meteor/tracker';
 import { $ } from 'meteor/jquery';
 
-import { Documents } from '/imports/api/documents/both/documents.js';
+import { Documents } from '/imports/api/documents/both/document-collection.js';
 
 import './document-new.html';
 import './document-new-hooks.js';
 
-Template.documentNew.onCreated(function() {
+Template.documentNew.onCreated(function () {
 });
 
-Template.documentNew.onRendered(function() {
+Template.documentNew.onRendered(function () {
 });
 
-Template.documentNew.onDestroyed(function() {
+Template.documentNew.onDestroyed(function () {
 });
 
 Template.documentNew.helpers({
@@ -24,5 +24,5 @@ Template.documentNew.helpers({
   }
 });
 
-Template.documentNew.events ({
+Template.documentNew.events({
 });

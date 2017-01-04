@@ -1,13 +1,13 @@
 import { Mongo } from 'meteor/mongo';
 import { SimpleSchema } from 'meteor/aldeed:simple-schema';
 
-import DocumentSchema from './schemas/document';
+import DocumentSchema from './schemas/document-schema';
 
 // ***************************************************************
 // DOCUMENTS Collection
 // ***************************************************************
 
-export const Documents = new Mongo.Collection('Documents');
+export const Documents = new Mongo.Collection('documents');
 
 // We use explicit methods, so deny everything
 Documents.allow({

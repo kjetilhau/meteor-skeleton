@@ -1,8 +1,8 @@
 import { Meteor } from 'meteor/meteor';
 import { SimpleSchema } from 'meteor/aldeed:simple-schema';
 
-import { Documents } from './documents.js';
-import DocumentSchema from './schemas/document';
+import { Documents } from './document-collection.js';
+import DocumentSchema from './schemas/document-schema';
 
 // ***************************************************************
 // CLIENT & SERVER METHODS (related to the documents collection)
@@ -13,7 +13,7 @@ Meteor.methods({
   "documents.create": (doc) => {
     check(doc, DocumentSchema);
 
-    return Documents.insert(doc, function(error, result) {
+    return Documents.insert(doc, function (error, result) {
       if (error) {
         console.log(error);
       }
@@ -23,7 +23,7 @@ Meteor.methods({
   "documents.update": (doc, documentId) => {
     check(doc, DocumentSchema);
 
-    return Documents.update(documentId, doc, function(error, result) {
+    return Documents.update(documentId, doc, function (error, result) {
       if (error) {
         console.log(error);
       }
@@ -33,7 +33,7 @@ Meteor.methods({
   "documents.delete": (documentId) => {
     check(documentId, String);
 
-    return Documents.remove(documentId, function(error, result) {
+    return Documents.remove(documentId, function (error, result) {
       if (error) {
         console.log(error);
       }

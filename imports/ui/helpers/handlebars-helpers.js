@@ -2,7 +2,7 @@
 // COMMON HELPERS (client-side only)
 // ***************************************************************
 
-import * as helpers from '../../modules/helpers.js';
+import * as helpers from '/imports/modules/helpers.js';
 
 // Cheap pluralization
 Template.registerHelper('pluralize', (count, word) => {

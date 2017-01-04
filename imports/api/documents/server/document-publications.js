@@ -1,7 +1,7 @@
 import { Meteor } from 'meteor/meteor';
 import { check } from 'meteor/check';
 
-import { Documents } from '../both/documents.js'
+import { Documents } from '../both/document-collection.js'
 
 // ***************************************************************
 // PUBLICATIONS (For the documents collection)

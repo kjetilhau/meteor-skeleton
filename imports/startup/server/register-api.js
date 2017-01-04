@@ -4,5 +4,5 @@
 // as an API to the client.
 // ***************************************************************
 
-import '../../api/documents/both/methods.js';
-import '../../api/documents/server/publications.js';
+import '../../api/documents/both/document-methods.js';
+import '../../api/documents/server/document-publications.js';
