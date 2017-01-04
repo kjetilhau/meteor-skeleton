@@ -6,6 +6,7 @@ import { $ } from 'meteor/jquery';
 import { SimpleSchema } from 'meteor/aldeed:simple-schema';
 
 import { Documents } from '/imports/api/documents/both/document-collection.js';
+import UpdateDocumentSchema from '/imports/api/documents/both/schemas/update-document-schema.js';
 
 import './document-edit.html';
 import './document-edit-hooks.js';
@@ -25,8 +26,8 @@ Template.documentEdit.onDestroyed(function () {
 });
 
 Template.documentEdit.helpers({
-  documentsCollection() {
-    return Documents;
+  updateDocumentSchema: function () {
+    return UpdateDocumentSchema;
   },
   document() {
     let document = Documents.findOne({ _id: Template.instance().getDocumentId() }) || {};

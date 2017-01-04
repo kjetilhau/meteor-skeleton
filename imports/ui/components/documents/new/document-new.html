@@ -3,7 +3,7 @@
   <div class="document-new">
     <h2>Create document</h2>
 
-    {{#autoForm collection=documentsCollection id="documentNewForm" type="method" meteormethod="documents.create"}}
+    {{#autoForm schema=createDocumentSchema id="documentNewForm" type="method" meteormethod="documents.create" }}
       <fieldset>
         {{> afQuickField name='title'}} {{> afQuickField name='content' rows=6}}
       </fieldset>

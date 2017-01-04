@@ -3,6 +3,7 @@ import { Template } from 'meteor/templating';
 import { $ } from 'meteor/jquery';
 
 import './documents-index-item.html';
+import { deleteDocument } from '/imports/api/documents/both/document-methods.js';
 
 Template.documentsIndexItem.onCreated(function () {
   this.getDocumentId = () => Template.instance().data.document._id;
@@ -24,15 +25,15 @@ Template.documentsIndexItem.events({
     if (confirm("Are you sure?")) {
       let documentId = Template.instance().getDocumentId();
 
-      Meteor.call('documents.delete', documentId, function (error, result) {
+      deleteDocument.call({
+        documentId: documentId
+      }, (error, result) => {
         if (error) {
-          console.log(error.reason)
-        }
-        else {
+          console.log(error.error)
+        } else {
           Bert.alert('Document deleted!', 'danger');
         }
       });
     }
   }
-
 });
