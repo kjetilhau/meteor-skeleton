@@ -15,8 +15,8 @@ import '../../ui/shared/header.js';
 import '../../ui/shared/loader.js';
 
 // Blaze helpers
-import '../../ui/helpers/common.js';
-import '../../ui/helpers/lists.js';
+import '../../ui/helpers/handlebarsHelpers.js';
+import '../../ui/helpers/handlebarsLists.js';
 
 // Notifications
 import './bert.js';

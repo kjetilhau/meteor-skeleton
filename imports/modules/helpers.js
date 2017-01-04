@@ -1,36 +1,36 @@
 // ***************************************************************
-// COMMON HELPERS (client-side only)
+// Helpers
 // ***************************************************************
 
 import moment from "moment";
 
 // Cheap pluralization
-Template.registerHelper('pluralize', (count, word) => {
+export const pluralize = (count, word) => {
   return count === 1 ? '1 ' + word : count + ' ' + word + 's';
-});
+};
 
 // Outputs e.g. 12 days ago or 2 hours ago
-Template.registerHelper('showTimeAgo', (date) => {
+export const showTimeAgo = (date) => {
   return !date ? "" : moment(date).fromNow();
-});
+};
 
 // Outputs e.g. Jan, 2013
-Template.registerHelper('showMonthYear', (date) => {
+export const showMonthYear = (date) => {
   return !date ? "" : moment(date).format("MMM, YYYY");
-});
+};
 
 // Outputs e.g. 12th Jan, 2013
-Template.registerHelper('showDayMonthYear', (date) => {
-  return !date ? "" : moment(date).format("Do MMM, YYYY")
-});
+export const showDayMonthYear = (date) => {
+  return !date ? "" : moment(date).format("Do MMM, YYYY");
+};
 
 // Outputs August 30th 2014, 5:33:46 pm
-Template.registerHelper('showPrettyTimestamp', (date) => {
-  return !date ? "" : moment(date).format("MMMM Do YYYY, h:mm:ss a")
-});
+export const showPrettyTimestamp = (date) => {
+  return !date ? "" : moment(date).format("MMMM Do YYYY, h:mm:ss a");
+};
 
 // Get profile image or placeholder image
-Template.registerHelper('getProfileImage', (image) => {
+export const getProfileImage = (image) => {
   let imagePlaceholder = "/img/profile_placeholder.png";
   if (!image || image === "") {
     return imagePlaceholder;
@@ -38,10 +38,10 @@ Template.registerHelper('getProfileImage', (image) => {
   else {
     return image;
   }
-});
+};
 
 // Translates those bytes to something more readable (e.g. 1.2 MB)
-Template.registerHelper('bytesToSize', (bytes) => {
+export const bytesToSize = (bytes) => {
   if (!bytes) {
     return ("");
   }
@@ -51,4 +51,4 @@ Template.registerHelper('bytesToSize', (bytes) => {
     let i = parseInt(Math.floor(Math.log(bytes) / Math.log(1024)));
     return Math.round(bytes / Math.pow(1024, i), 2) + ' ' + sizes[i];
   }
-});
+};
