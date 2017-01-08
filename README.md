@@ -3,6 +3,8 @@ A boilerplate for Meteor - giving you a simple and more organized way to create 
 
 It comes with a complete collection sample including publications, subscriptions and CRUD functionality. Routes, views and some nice helpers are also included.
 
+And yes, we use Blaze :)
+
 Take a look at [meteorskeleton.herokuapp.com](https://meteorskeleton.herokuapp.com) for a demo.
 
 ![Meteor-skeleton](http://i.imgur.com/Soq1xnF.png)
