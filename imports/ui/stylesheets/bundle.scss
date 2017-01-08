@@ -1,0 +1,34 @@
+/* Style bundle
+-------------------------------------------------- */
+
+// Helpers
+@import "{}/imports/ui/stylesheets/helpers.scss";
+
+// Layouts
+@import "{}/imports/ui/layouts/layout.scss";
+
+// Shared
+@import "{}/imports/ui/shared/header/header.scss";
+@import "{}/imports/ui/shared/footer/footer.scss";
+@import "{}/imports/ui/shared/error-404/error-404.scss";
+@import "{}/imports/ui/shared/empty-result/empty-result.scss";
+@import "{}/imports/ui/shared/loader/loader.scss";
+
+// Pages
+@import "{}/imports/ui/pages/frontpage/frontpage.scss";
+@import "{}/imports/ui/pages/about/about.scss";
+
+// Components
+@import "{}/imports/ui/components/documents/index/documents-index.scss";
+@import "{}/imports/ui/components/documents/show/document-show.scss";
+@import "{}/imports/ui/components/documents/edit/document-edit.scss";
+@import "{}/imports/ui/components/documents/new/document-new.scss";
+
+// Bootstrap theme
+@import "{}/imports/ui/stylesheets/theme/bootstrap_variables.scss";
+
+// Bootstrap SASS library
+@import '{}/node_modules/bootstrap-sass/assets/stylesheets/_bootstrap.scss';
+
+// Base
+@import "{}/imports/ui/stylesheets/common.scss";

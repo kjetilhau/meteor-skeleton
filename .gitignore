@@ -1,6 +1,10 @@
 .DS_Store
 *.sublime-project
 *.sublime-workspace
-dump
-settings.json
 .idea/*
+.vscode
+node_modules
+dump
+settings-development.json
+settings-production.json
+npm-debug.log
