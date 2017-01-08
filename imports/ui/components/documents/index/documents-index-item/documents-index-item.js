@@ -2,8 +2,9 @@ import { Meteor } from 'meteor/meteor';
 import { Template } from 'meteor/templating';
 import { $ } from 'meteor/jquery';
 
-import './documents-index-item.html';
 import { deleteDocument } from '/imports/api/documents/both/document-methods.js';
+
+import './documents-index-item.html';
 
 Template.documentsIndexItem.onCreated(function () {
   // Example for validating the data context (if needed)

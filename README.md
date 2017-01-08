@@ -23,6 +23,7 @@ Take a look at [meteorskeleton.herokuapp.com](https://meteorskeleton.herokuapp.c
 - aldeed:autoform
 - fourseven:scss
 - themeteorchef:bert
+- fortawesome:fontawesome
 
 ### NPM
 
@@ -77,5 +78,6 @@ server
 ```
 
 ## Other great boilerplates
+- [base](https://github.com/themeteorchef/base) by The Meteor Chef
 - [meteor-boilerplate](https://github.com/matteodem/meteor-boilerplate) by matteodem
 - [meteor-boilerplate](https://github.com/Differential/meteor-boilerplate) by Differential

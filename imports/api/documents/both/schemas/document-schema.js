@@ -1,7 +1,7 @@
 import { SimpleSchema } from 'meteor/aldeed:simple-schema';
 
 // ***************************************************************
-// DOCUMENT Schema
+// Document schema
 // ***************************************************************
 
 const DocumentSchema = new SimpleSchema({

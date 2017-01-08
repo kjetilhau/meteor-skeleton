@@ -2,7 +2,7 @@
 // AUTOFORM HOOKS
 // ***************************************************************
 
-// Logs a simple message to the console and re-routes if successful
+// Shows a simple message and re-routes if successful
 AutoForm.addHooks(['documentNewForm'], {
   after: {
     "method": (error, result) => {
@@ -10,7 +10,7 @@ AutoForm.addHooks(['documentNewForm'], {
         console.log("Insert Error:", error.reason);
       } else {
         FlowRouter.go('documentsIndex');
-        Bert.alert( 'Document inserted!', 'success');
+        Bert.alert('Document inserted!', 'success');
       }
     }
   }

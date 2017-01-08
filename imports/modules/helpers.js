@@ -26,7 +26,7 @@ export const showDayMonthYear = (date) => {
 
 // Outputs August 30th 2014, 5:33:46 pm
 export const showPrettyTimestamp = (date) => {
-  return !date ? "" : moment(date).format("MMMM Do YYYY, h:mm:ss a");
+  return !date ? "" : moment(date).format("MMMM Do YYYY, h:mm a");
 };
 
 // Get profile image or placeholder image

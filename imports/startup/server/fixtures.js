@@ -1,5 +1,5 @@
 import { Meteor } from 'meteor/meteor';
-import { Documents } from '../../api/documents/both/document-collection.js';
+import { Documents } from '/imports/api/documents/both/document-collection.js';
 
 // ***************************************************************
 // Fixtures (generate dummy data for the Documents collection)

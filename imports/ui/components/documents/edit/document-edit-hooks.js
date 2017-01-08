@@ -2,7 +2,7 @@
 // AUTOFORM HOOKS
 // ***************************************************************
 
-// Logs a simple message to the console and re-routes if successful
+// Shows a simple message and re-routes if successful
 AutoForm.addHooks(['documentEditForm'], {
   after: {
     "method": (error, result) => {
