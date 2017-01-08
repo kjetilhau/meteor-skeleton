@@ -16,6 +16,9 @@ Meteor.publish('documents.all', function documentsAll() {
 // DOCUMENT SHOW
 // -------------------------------------------------------
 Meteor.publish('documents.single', function documentsSingle(id) {
-  check(id, String);
+  new SimpleSchema({
+    id: { type: String }
+  }).validate({ id });
+
   return Documents.find(id);
 });

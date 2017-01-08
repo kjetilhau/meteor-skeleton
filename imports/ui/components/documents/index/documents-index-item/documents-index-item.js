@@ -6,6 +6,17 @@ import './documents-index-item.html';
 import { deleteDocument } from '/imports/api/documents/both/document-methods.js';
 
 Template.documentsIndexItem.onCreated(function () {
+  // Example for validating the data context (if needed)
+  this.autorun(() => {
+    new SimpleSchema({
+      _id: { type: String },
+      title: { type: String },
+      content: { type: String, optional: true },
+      createdAt: { type: Date },
+      updatedAt: { type: Date, optional: true },
+    }).validate(Template.currentData().document);
+  });
+
   this.getDocumentId = () => Template.instance().data.document._id;
 });
 
@@ -19,7 +30,7 @@ Template.documentsIndexItem.helpers({
 });
 
 Template.documentsIndexItem.events({
-  'click .delete-document'(event, instance) {
+  'click .js-delete-document'(event, instance) {
     event.preventDefault();
 
     if (confirm("Are you sure?")) {
