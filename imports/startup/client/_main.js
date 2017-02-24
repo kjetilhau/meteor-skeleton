@@ -2,8 +2,11 @@
 // Bundle for client modules
 // ***************************************************************
 
+// Config
+import './config';
+
 // Main modules
-import './router/index.js';
+import './router/router.js';
 import './accounts.js';
 import './subscriptions.js';
 

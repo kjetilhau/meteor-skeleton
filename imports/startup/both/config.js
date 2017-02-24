@@ -1,9 +1,6 @@
 // ***************************************************************
-// Router bundle
+// Config for both client and server
 // ***************************************************************
 
-// Routing
-import './config.js';
-import './filters.js';
-import './pages.js';
-import './documents.js';
+// Extra logging for SimpleSchema. Turn off in production!
+SimpleSchema.debug = true;

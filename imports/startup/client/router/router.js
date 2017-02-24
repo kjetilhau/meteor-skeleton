@@ -1,6 +1,11 @@
 // ***************************************************************
-// Bundle for client AND server modules
+// Router bundle
 // ***************************************************************
 
 // Config
-import './config.js'
+import './router-config.js';
+import './filter-config.js';
+
+// Routes
+import './page-routes.js';
+import './document-routes.js';

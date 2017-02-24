@@ -1,6 +1,6 @@
 // ***************************************************************
-// Bundle for client AND server modules
+// Config for client-side only
 // ***************************************************************
 
-// Config
-import './config.js'
+// Extra logging for Autoform. Turn off in production!
+AutoForm.debug()
