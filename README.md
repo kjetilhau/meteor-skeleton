@@ -7,6 +7,14 @@ Take a look at [meteorskeleton.herokuapp.com](https://meteorskeleton.herokuapp.c
 
 ![Meteor-skeleton](http://i.imgur.com/Soq1xnF.png)
 
+## Usage
+1. Clone it: `git clone https://github.com/kjetilhau/meteor-skeleton.git`
+2. `cd meteor-skeleton`
+3. Remove the .git folder
+4. `git init`
+6. `meteor npm install`
+7. `meteor`
+
 ## Packages used
 
 ### Atmosphere
@@ -31,15 +39,6 @@ Take a look at [meteorskeleton.herokuapp.com](https://meteorskeleton.herokuapp.c
 - moment
 
 The Meteor packages 'autopublish' and 'insecure' are removed by default.
-
-### NPM
-
-## Usage
-1. Clone it: `git clone https://github.com/kjetilhau/meteor-skeleton.git`
-2. `cd meteor-skeleton`
-3. Remove the .git folder
-4. `git init`
-6. `meteor`
 
 ## Structure
 
