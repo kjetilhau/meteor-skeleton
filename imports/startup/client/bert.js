@@ -1,9 +1,12 @@
+import { Meteor } from 'meteor/meteor'
+import { Bert } from 'meteor/themeteorchef:bert'
+
 // ***************************************************************
 // Bert notification configuration
 // ***************************************************************
 
 // Set notification defaults
-Meteor.startup( () => {
+Meteor.startup(() => {
   Bert.defaults = {
     hideDelay: 3500,
     // Accepts: a number in milliseconds.
@@ -12,5 +15,5 @@ Meteor.startup( () => {
     // growl-bottom-left, growl-bottom-right.
     type: 'info'
     // Accepts: default, success, info, warning, danger.
-  };
-});
+  }
+})

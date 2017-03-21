@@ -1,1 +1,1 @@
-import './footer.html';
+import './footer.html'

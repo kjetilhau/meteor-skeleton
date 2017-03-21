@@ -1,4 +1,4 @@
-import { SimpleSchema } from 'meteor/aldeed:simple-schema';
+import { SimpleSchema } from 'meteor/aldeed:simple-schema'
 
 // ***************************************************************
 // Update document schema
@@ -11,16 +11,16 @@ const UpdateDocumentSchema = new SimpleSchema({
   },
   title: {
     type: String,
-    label: "Title",
+    label: 'Title',
     max: 120,
     optional: false
   },
   content: {
     type: String,
-    label: "Content",
+    label: 'Content',
     max: 1000,
     optional: true
-  },
-});
+  }
+})
 
-export default UpdateDocumentSchema;
+export default UpdateDocumentSchema

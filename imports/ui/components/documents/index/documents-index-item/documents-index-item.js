@@ -1,10 +1,10 @@
-import { Meteor } from 'meteor/meteor';
-import { Template } from 'meteor/templating';
-import { $ } from 'meteor/jquery';
+import { Template } from 'meteor/templating'
+import { SimpleSchema } from 'meteor/aldeed:simple-schema'
+import { Bert } from 'meteor/themeteorchef:bert'
 
-import { deleteDocument } from '/imports/api/documents/both/document-methods.js';
+import { deleteDocument } from '/imports/api/documents/both/document-methods.js'
 
-import './documents-index-item.html';
+import './documents-index-item.html'
 
 Template.documentsIndexItem.onCreated(function () {
   // Example for validating the data context (if needed)
@@ -14,28 +14,28 @@ Template.documentsIndexItem.onCreated(function () {
       title: { type: String },
       content: { type: String, optional: true },
       createdAt: { type: Date },
-      updatedAt: { type: Date, optional: true },
-    }).validate(Template.currentData().document);
-  });
+      updatedAt: { type: Date, optional: true }
+    }).validate(Template.currentData().document)
+  })
 
-  this.getDocumentId = () => Template.instance().data.document._id;
-});
+  this.getDocumentId = () => Template.instance().data.document._id
+})
 
 Template.documentsIndexItem.onRendered(function () {
-});
+})
 
 Template.documentsIndexItem.onDestroyed(function () {
-});
+})
 
 Template.documentsIndexItem.helpers({
-});
+})
 
 Template.documentsIndexItem.events({
-  'click .js-delete-document'(event, instance) {
-    event.preventDefault();
+  'click .js-delete-document' (event, instance) {
+    event.preventDefault()
 
-    if (confirm("Are you sure?")) {
-      let documentId = Template.instance().getDocumentId();
+    if (confirm('Are you sure?')) {
+      let documentId = Template.instance().getDocumentId()
 
       deleteDocument.call({
         documentId: documentId
@@ -43,9 +43,9 @@ Template.documentsIndexItem.events({
         if (error) {
           console.log(error.error)
         } else {
-          Bert.alert('Document deleted!', 'danger');
+          Bert.alert('Document deleted!', 'danger')
         }
-      });
+      })
     }
   }
-});
+})

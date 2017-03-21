@@ -1,4 +1,4 @@
-import { SimpleSchema } from 'meteor/aldeed:simple-schema';
+import { SimpleSchema } from 'meteor/aldeed:simple-schema'
 
 // ***************************************************************
 // Create document schema
@@ -7,16 +7,16 @@ import { SimpleSchema } from 'meteor/aldeed:simple-schema';
 const CreateDocumentSchema = new SimpleSchema({
   title: {
     type: String,
-    label: "Title",
+    label: 'Title',
     max: 120,
     optional: false
   },
   content: {
     type: String,
-    label: "Content",
+    label: 'Content',
     max: 1000,
     optional: true
-  },
-});
+  }
+})
 
-export default CreateDocumentSchema;
+export default CreateDocumentSchema

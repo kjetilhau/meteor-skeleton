@@ -1,1 +1,1 @@
-import './error-404.html';
+import './error-404.html'

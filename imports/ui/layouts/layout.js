@@ -1,1 +1,1 @@
-import './layout.html';
+import './layout.html'

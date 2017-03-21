@@ -1,5 +1,5 @@
-import { Meteor } from 'meteor/meteor';
-import { SimpleSchema } from 'meteor/aldeed:simple-schema';
+import { Meteor } from 'meteor/meteor'
+import { SimpleSchema } from 'meteor/aldeed:simple-schema'
 
 import { Documents } from '../both/document-collection.js'
 
@@ -9,16 +9,16 @@ import { Documents } from '../both/document-collection.js'
 
 // DOCUMENTS INDEX
 // -------------------------------------------------------
-Meteor.publish('documents.all', function documentsAll() {
-  return Documents.find();
-});
+Meteor.publish('documents.all', function documentsAll () {
+  return Documents.find()
+})
 
 // DOCUMENT SHOW
 // -------------------------------------------------------
-Meteor.publish('documents.single', function documentsSingle(id) {
+Meteor.publish('documents.single', function documentsSingle (id) {
   new SimpleSchema({
     id: { type: String }
-  }).validate({ id });
+  }).validate({ id })
 
-  return Documents.find(id);
-});
+  return Documents.find(id)
+})

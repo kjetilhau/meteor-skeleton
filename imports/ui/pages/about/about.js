@@ -1,1 +1,1 @@
-import './about.html';
+import './about.html'

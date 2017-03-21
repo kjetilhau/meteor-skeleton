@@ -4,8 +4,7 @@
     {{#if Template.subscriptionsReady}}
       <h2>Edit document</h2>
 
-      {{#autoForm schema=updateDocumentSchema doc=document id="documentEditForm" type="method" meteormethod="documents.update"
-        }}
+      {{#autoForm schema=updateDocumentSchema doc=document id="documentEditForm" type="method" meteormethod="documents.update" }}
         {{> afQuickField name='_id' type='hidden'}}
         <fieldset>
           {{> afQuickField name='title'}} {{> afQuickField name='content' rows=6}}
