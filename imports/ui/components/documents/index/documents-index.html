@@ -1,33 +1,37 @@
 <template name="documentsIndex">
 
   <div class="documents-index">
-    <h1>Documents</h1>
-    <a class="btn btn-primary" href="{{pathFor 'documentNew'}}" role="button">New document</a>
+    <div class="card">
+      <div class="card-block">
+        <h1>Documents</h1>
+        <a class="btn btn-primary" href="{{pathFor 'documentNew'}}" role="button">New document</a>
 
-    {{#if Template.subscriptionsReady}}
-      {{#if documents.count}}
-        <table class="table table-striped mt-10">
-          <thead>
-            <tr>
-              <th>Title</th>
-              <th>Content</th>
-              <th>Updated</th>
-              <th>Created</th>
-              <th class="text-right">Actions</th>
-            </tr>
-          </thead>
-          <tbody>
-            {{#each document in documents}}
-              {{> documentsIndexItem document=document}}
-            {{/each}}
-          </tbody>
-        </table>
-      {{else}}
-        {{> emptyResult text="No documents added yet" description="Click the button to add some..." icon="fa fa-frown-o"}}
-      {{/if}}
-    {{else}}
-      {{> loader}}
-    {{/if}}
+        {{#if Template.subscriptionsReady}}
+          {{#if documents.count}}
+            <table class="table table-hover table-sm mt-20">
+              <thead>
+                <tr>
+                  <th>Title</th>
+                  <th>Content</th>
+                  <th>Updated</th>
+                  <th>Created</th>
+                  <th class="text-right">Actions</th>
+                </tr>
+              </thead>
+              <tbody>
+                {{#each document in documents}}
+                  {{> documentsIndexItem document=document}}
+                {{/each}}
+              </tbody>
+            </table>
+          {{else}}
+            {{> emptyResult text="No documents added yet" description="Click the button to add some..." icon="fa fa-frown-o"}}
+          {{/if}}
+        {{else}}
+          {{> loader}}
+        {{/if}}
+      </div>
+    </div>
   </div>
 
 </template>

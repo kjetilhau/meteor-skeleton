@@ -25,10 +25,13 @@
 @import "{}/imports/ui/components/documents/new/document-new.scss";
 
 // Bootstrap theme
-@import "{}/imports/ui/stylesheets/theme/bootstrap_variables.scss";
+@import "{}/imports/ui/stylesheets/bootstrap/bootstrap_variables.scss";
 
 // Bootstrap SASS library
-@import '{}/node_modules/bootstrap-sass/assets/stylesheets/_bootstrap.scss';
+@import "{}/imports/ui/stylesheets/bootstrap/_bootstrap.scss";
+
+// Your own variables
+@import "{}/imports/ui/stylesheets/theme/variables.scss";
 
 // Base
 @import "{}/imports/ui/stylesheets/common.scss";

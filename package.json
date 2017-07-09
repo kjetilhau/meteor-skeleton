@@ -6,8 +6,9 @@
   },
   "dependencies": {
     "babel-runtime": "^6.23.0",
-    "bootstrap-sass": "^3.3.7",
-    "meteor-node-stubs": "~0.2.5",
-    "moment": "^2.17.1"
+    "bootstrap": "^4.0.0-alpha.6",
+    "meteor-node-stubs": "^0.2.11",
+    "moment": "^2.18.1",
+    "tether": "^1.4.0"
   }
 }
