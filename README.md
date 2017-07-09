@@ -12,7 +12,7 @@ Take a look at [meteorskeleton.herokuapp.com](https://meteorskeleton.herokuapp.c
 2. `cd meteor-skeleton`
 3. Remove the .git folder
 4. `git init`
-6. `meteor npm install`
+6. `meteor npm install --save`
 7. `meteor`
 
 ## Packages used
@@ -35,7 +35,7 @@ Take a look at [meteorskeleton.herokuapp.com](https://meteorskeleton.herokuapp.c
 
 ### NPM
 
-- bootstrap-sass
+- bootstrap
 - moment
 
 The Meteor packages 'autopublish' and 'insecure' are removed by default.
