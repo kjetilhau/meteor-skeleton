@@ -2,7 +2,7 @@
 
   <div class="document-show">
     <div class="card">
-      <div class="card-block">
+      <div class="card-body">
         {{#if Template.subscriptionsReady}}
           <h2>{{document.title}}</h2>
           <p>{{document.content}}</p>
@@ -13,7 +13,7 @@
             {{/if}}
             Created: {{showPrettyTimestamp document.createdAt}}
           </p>
-          <a href="{{pathFor 'documentsIndex'}}" class="btn btn-secondary">Back</a>
+          <a href="{{pathFor 'documentsIndex'}}" class="btn btn-link">Back</a>
         {{else}}
           {{> loader}}
         {{/if}}

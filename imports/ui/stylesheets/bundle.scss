@@ -24,11 +24,10 @@
 @import "{}/imports/ui/components/documents/edit/document-edit.scss";
 @import "{}/imports/ui/components/documents/new/document-new.scss";
 
-// Bootstrap theme
-@import "{}/imports/ui/stylesheets/bootstrap/bootstrap_variables.scss";
-
 // Bootstrap SASS library
 @import "{}/imports/ui/stylesheets/bootstrap/_bootstrap.scss";
+
+
 
 // Your own variables
 @import "{}/imports/ui/stylesheets/theme/variables.scss";

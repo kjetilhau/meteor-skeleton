@@ -1,12 +1,13 @@
 <template name="header">
 
-  <nav class="Header navbar navbar-inverse bg-primary navbar-toggleable-md mb-4">
+  <nav class="Header navbar navbar-expand-lg navbar-dark bg-primary mb-4">
     <div class="container">
-      <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-        aria-expanded="false" aria-label="Toggle navigation">
-    <span class="navbar-toggler-icon"></span>
-  </button>
       <a class="navbar-brand" href="{{pathFor 'frontpage'}}">Meteor-skeleton</a>
+
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+        aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
 
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav mr-auto">
@@ -14,16 +15,16 @@
             <a class="nav-link" href="{{pathFor 'frontpage'}}">Home <span class="sr-only">(current)</span></a>
           </li>
           <li class="nav-item {{isActiveRoute 'documentsIndex'}}">
-            <a class="nav-link" href="{{pathFor 'documentsIndex'}}">Documents <span class="sr-only">(current)</span></a>
+            <a class="nav-link" href="{{pathFor 'documentsIndex'}}">Documents</a>
           </li>
         </ul>
 
         <ul class="navbar-nav float-right">
           <li class="nav-item {{isActiveRoute 'about'}}">
-            <a class="nav-link" href="{{pathFor 'about'}}">About <span class="sr-only">(current)</span></a>
+            <a class="nav-link" href="{{pathFor 'about'}}">About</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="https://github.com/kjetilhau/meteor-skeleton" target="_blank">Github <span class="sr-only">(current)</span></a>
+            <a class="nav-link" href="https://github.com/kjetilhau/meteor-skeleton" target="_blank">Github</a>
           </li>
         </ul>
       </div>

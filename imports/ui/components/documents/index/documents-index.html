@@ -2,13 +2,13 @@
 
   <div class="documents-index">
     <div class="card">
-      <div class="card-block">
+      <div class="card-body">
         <h1>Documents</h1>
         <a class="btn btn-primary" href="{{pathFor 'documentNew'}}" role="button">New document</a>
 
         {{#if Template.subscriptionsReady}}
           {{#if documents.count}}
-            <table class="table table-hover table-sm mt-20">
+            <table class="table table-hover mt-20">
               <thead>
                 <tr>
                   <th>Title</th>
