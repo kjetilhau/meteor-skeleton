@@ -2,12 +2,12 @@
 
   <div class="empty-result">
     {{#if icon}}
-      <i class="empty-result__icon fa {{icon}}"></i>
+      <i class="empty-result__icon {{icon}}"></i>
     {{else}}
       {{#if image}}
         <img class="empty-result__image" src="{{image}}" alt="{{text}}">
       {{else}}
-        <i class="empty-result__icon fa fa-frown-o"></i>
+        <i class="empty-result__icon">:(</i>
       {{/if}}
     {{/if}}
 
