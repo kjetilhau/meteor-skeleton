@@ -21,7 +21,7 @@ Take a look at [meteorskeleton.herokuapp.com](https://meteorskeleton.herokuapp.c
 
 - blaze-html-templates
 - accounts-base
-- alanning:roles
+- #alanning:roles
 - kadira:flow-router
 - kadira:blaze-layout
 - arillo:flow-router-helpers
@@ -31,7 +31,6 @@ Take a look at [meteorskeleton.herokuapp.com](https://meteorskeleton.herokuapp.c
 - aldeed:autoform
 - fourseven:scss
 - themeteorchef:bert
-- fortawesome:fontawesome
 
 ### NPM
 
