@@ -23,4 +23,4 @@ import '/imports/ui/helpers/handlebars-helpers.js'
 import '/imports/ui/helpers/handlebars-lists.js'
 
 // Notifications
-import './bert.js'
+import '/imports/modules/notifier.js'

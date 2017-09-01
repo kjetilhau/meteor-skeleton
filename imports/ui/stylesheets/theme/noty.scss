@@ -1,0 +1,25 @@
+@import "{}/imports/ui/stylesheets/bootstrap/bootstrap_variables.scss";
+
+.noty_theme__sunset.noty_type__alert,
+.noty_theme__sunset.noty_type__notification {
+  background-color: $gray-300;
+  color: $body-color;
+}
+
+.noty_theme__sunset.noty_type__warning {
+  background-color: $yellow;
+  color: $body-color;
+}
+
+.noty_theme__sunset.noty_type__error {
+  background-color: $red;
+}
+
+.noty_theme__sunset.noty_type__info,
+.noty_theme__sunset.noty_type__information {
+  background-color: $blue;
+}
+
+.noty_theme__sunset.noty_type__success {
+  background-color: $green;
+}

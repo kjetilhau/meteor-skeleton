@@ -27,7 +27,9 @@
 // Bootstrap SASS library
 @import "{}/imports/ui/stylesheets/bootstrap/_bootstrap.scss";
 
-
+// Noty with custom theme
+@import "{}/node_modules/noty/src/noty.scss";
+@import "{}/imports/ui/stylesheets/theme/noty.scss";
 
 // Your own variables
 @import "{}/imports/ui/stylesheets/theme/variables.scss";

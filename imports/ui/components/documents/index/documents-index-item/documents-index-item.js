@@ -1,8 +1,8 @@
 import { Template } from 'meteor/templating'
 import { SimpleSchema } from 'meteor/aldeed:simple-schema'
-import { Bert } from 'meteor/themeteorchef:bert'
 
 import { deleteDocument } from '/imports/api/documents/both/document-methods.js'
+import { notify } from '/imports/modules/notifier'
 
 import './documents-index-item.html'
 
@@ -43,7 +43,7 @@ Template.documentsIndexItem.events({
         if (error) {
           console.log(error.error)
         } else {
-          Bert.alert('Document deleted!', 'danger')
+          notify('Document deleted!', 'error')
         }
       })
     }

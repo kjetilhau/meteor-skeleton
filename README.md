@@ -30,12 +30,12 @@ Take a look at [meteorskeleton.herokuapp.com](https://meteorskeleton.herokuapp.c
 - aldeed:collection2
 - aldeed:autoform
 - fourseven:scss
-- themeteorchef:bert
 
 ### NPM
 
 - bootstrap
 - moment
+- noty
 
 The Meteor packages 'autopublish' and 'insecure' are removed by default.
 

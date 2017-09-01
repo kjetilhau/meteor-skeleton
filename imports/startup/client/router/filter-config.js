@@ -1,6 +1,7 @@
 import { FlowRouter } from 'meteor/kadira:flow-router'
 import { Meteor } from 'meteor/meteor'
-import { Bert } from 'meteor/themeteorchef:bert'
+
+import { notify } from '/imports/modules/notifier'
 
 // ***************************************************************
 // Route filters & triggers
@@ -10,7 +11,7 @@ import { Bert } from 'meteor/themeteorchef:bert'
 const mustBeLoggedIn = (context, redirect, stop) => {
   if (!Meteor.userId()) {
     redirect('frontpage')
-    Bert.alert('Must be logged in!', 'danger')
+    notify('Must be logged in!', 'error')
   }
 }
 

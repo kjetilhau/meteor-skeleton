@@ -30,7 +30,6 @@ aldeed:autoform
 aldeed:collection2
 aldeed:simple-schema
 # alanning:roles
-themeteorchef:bert
 fourseven:scss
 dynamic-import@0.1.1
 seba:minifiers-autoprefixer
