@@ -5,7 +5,7 @@ It comes with a complete collection sample including publications, subscriptions
 
 Take a look at [meteorskeleton.herokuapp.com](https://meteorskeleton.herokuapp.com) for a demo.
 
-![Meteor-skeleton](http://i.imgur.com/Soq1xnF.png)
+![Meteor-skeleton](http://i.imgur.com/bKiUPhD.png)
 
 ## Usage
 1. Clone it: `git clone https://github.com/kjetilhau/meteor-skeleton.git`
