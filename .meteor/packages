@@ -26,10 +26,10 @@ kadira:flow-router
 kadira:blaze-layout
 arillo:flow-router-helpers
 zimme:active-route
-aldeed:autoform
-aldeed:collection2
-aldeed:simple-schema
 # alanning:roles
 fourseven:scss
 dynamic-import@0.1.3
 seba:minifiers-autoprefixer
+aldeed:collection2-core@2.0.1
+aldeed:autoform
+aldeed:schema-deny

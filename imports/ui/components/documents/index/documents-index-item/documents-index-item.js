@@ -1,5 +1,5 @@
 import { Template } from 'meteor/templating'
-import { SimpleSchema } from 'meteor/aldeed:simple-schema'
+import SimpleSchema from 'simpl-schema'
 
 import { deleteDocument } from '/imports/api/documents/both/document-methods.js'
 import { notify } from '/imports/modules/notifier'

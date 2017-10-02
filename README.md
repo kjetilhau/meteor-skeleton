@@ -26,13 +26,14 @@ Take a look at [meteorskeleton.herokuapp.com](https://meteorskeleton.herokuapp.c
 - kadira:blaze-layout
 - arillo:flow-router-helpers
 - zimme:active-route
-- aldeed:simple-schema
-- aldeed:collection2
+- aldeed:schema-deny
+- aldeed:collection2-core
 - aldeed:autoform
 - fourseven:scss
 
 ### NPM
 
+- simpl-schema
 - bootstrap
 - moment
 - noty
