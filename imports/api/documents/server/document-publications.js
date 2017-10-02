@@ -1,7 +1,7 @@
-import { Meteor } from 'meteor/meteor'
-import SimpleSchema from 'simpl-schema'
+import { Meteor } from "meteor/meteor"
+import SimpleSchema from "simpl-schema"
 
-import { Documents } from '../both/document-collection.js'
+import { Documents } from "../both/document-collection.js"
 
 // ***************************************************************
 // PUBLICATIONS (For the documents collection)
@@ -9,13 +9,13 @@ import { Documents } from '../both/document-collection.js'
 
 // DOCUMENTS INDEX
 // -------------------------------------------------------
-Meteor.publish('documents.all', function documentsAll () {
+Meteor.publish("documents.all", function documentsAll() {
   return Documents.find()
 })
 
 // DOCUMENT SHOW
 // -------------------------------------------------------
-Meteor.publish('documents.single', function documentsSingle (id) {
+Meteor.publish("documents.single", function documentsSingle(id) {
   new SimpleSchema({
     id: { type: String }
   }).validate({ id })

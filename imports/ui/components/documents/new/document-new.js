@@ -1,24 +1,20 @@
-import { Template } from 'meteor/templating'
+import { Template } from "meteor/templating"
 
-import CreateDocumentSchema from '/imports/api/documents/both/schemas/create-document-schema.js'
+import CreateDocumentSchema from "/imports/api/documents/both/schemas/create-document-schema.js"
 
-import './document-new.html'
-import './document-new-hooks.js'
+import "./document-new.html"
+import "./document-new-hooks.js"
 
-Template.documentNew.onCreated(function () {
-})
+Template.documentNew.onCreated(function() {})
 
-Template.documentNew.onRendered(function () {
-})
+Template.documentNew.onRendered(function() {})
 
-Template.documentNew.onDestroyed(function () {
-})
+Template.documentNew.onDestroyed(function() {})
 
 Template.documentNew.helpers({
-  createDocumentSchema: function () {
+  createDocumentSchema: function() {
     return CreateDocumentSchema
   }
 })
 
-Template.documentNew.events({
-})
+Template.documentNew.events({})

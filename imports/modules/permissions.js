@@ -1,5 +1,5 @@
-import { Meteor } from 'meteor/meteor'
-import { Roles } from 'meteor/alanning:roles'
+import { Meteor } from "meteor/meteor"
+import { Roles } from "meteor/alanning:roles"
 
 // ***************************************************************
 // Permissions
@@ -16,7 +16,7 @@ export const canRemoveItem = (userId, item) => {
 }
 
 // Checks whether selected user or current user is admin (with the Roles package)
-export const isAdmin = (user) => {
-  user = (typeof user === 'undefined') ? Meteor.user() : user
-  return !!user && !!Roles.userIsInRole(user, ['admin'])
+export const isAdmin = user => {
+  user = typeof user === "undefined" ? Meteor.user() : user
+  return !!user && !!Roles.userIsInRole(user, ["admin"])
 }

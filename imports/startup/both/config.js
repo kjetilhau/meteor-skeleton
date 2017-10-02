@@ -1,4 +1,4 @@
-import SimpleSchema from 'simpl-schema'
+import SimpleSchema from "simpl-schema"
 
 // ***************************************************************
 // Config for both client and server

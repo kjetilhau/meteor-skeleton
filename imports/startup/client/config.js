@@ -1,4 +1,4 @@
-import { AutoForm } from 'meteor/aldeed:autoform'
+import { AutoForm } from "meteor/aldeed:autoform"
 
 // ***************************************************************
 // Config for client-side only

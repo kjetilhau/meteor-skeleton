@@ -1,4 +1,4 @@
-import SimpleSchema from 'simpl-schema'
+import SimpleSchema from "simpl-schema"
 
 // ***************************************************************
 // Create document schema
@@ -7,13 +7,13 @@ import SimpleSchema from 'simpl-schema'
 const CreateDocumentSchema = new SimpleSchema({
   title: {
     type: String,
-    label: 'Title',
+    label: "Title",
     max: 120,
     optional: false
   },
   content: {
     type: String,
-    label: 'Content',
+    label: "Content",
     max: 1000,
     optional: true
   }

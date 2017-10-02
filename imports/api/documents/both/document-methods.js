@@ -1,63 +1,69 @@
-import { Meteor } from 'meteor/meteor'
-import SimpleSchema from 'simpl-schema'
-import { ValidatedMethod } from 'meteor/mdg:validated-method'
+import { Meteor } from "meteor/meteor"
+import SimpleSchema from "simpl-schema"
+import { ValidatedMethod } from "meteor/mdg:validated-method"
 
-import { Documents } from './document-collection.js'
-import CreateDocumentSchema from './schemas/create-document-schema.js'
-import UpdateDocumentSchema from './schemas/update-document-schema.js'
+import { Documents } from "./document-collection.js"
+import CreateDocumentSchema from "./schemas/create-document-schema.js"
+import UpdateDocumentSchema from "./schemas/update-document-schema.js"
 
 // ***************************************************************
 // METHODS (related to the documents collection)
 // ***************************************************************
 
 export const createDocument = new ValidatedMethod({
-  name: 'documents.create',
+  name: "documents.create",
   validate: CreateDocumentSchema.validator(),
-  run (document) {
+  run(document) {
     // Additional data verification
 
-    return Documents.insert({
-      title: document.title,
-      content: document.content
-    }, function (error, result) {
-      if (error) {
-        throw new Meteor.Error(500, 'Server error')
+    return Documents.insert(
+      {
+        title: document.title,
+        content: document.content
+      },
+      function(error, result) {
+        if (error) {
+          throw new Meteor.Error(500, "Server error")
+        }
       }
-    })
+    )
   }
 })
 
 export const updateDocument = new ValidatedMethod({
-  name: 'documents.update',
+  name: "documents.update",
   validate: UpdateDocumentSchema.validator(),
-  run (document) {
+  run(document) {
     // Additional data verification
 
-    return Documents.update(document._id, {
-      $set: {
-        title: document.title,
-        content: document.content
+    return Documents.update(
+      document._id,
+      {
+        $set: {
+          title: document.title,
+          content: document.content
+        }
+      },
+      function(error, result) {
+        if (error) {
+          throw new Meteor.Error(500, "Server error")
+        }
       }
-    }, function (error, result) {
-      if (error) {
-        throw new Meteor.Error(500, 'Server error')
-      }
-    }
     )
   }
 })
 
 export const deleteDocument = new ValidatedMethod({
-  name: 'documents.delete',
+  name: "documents.delete",
   validate: new SimpleSchema({
     documentId: { type: String }
   }).validator(),
-  run ({ documentId }) {
+  run({ documentId }) {
     // Additional data verification
 
-    return Documents.remove(documentId, function (error, result) {
+    return Documents.remove(documentId, function(error, result) {
       if (error) {
-        throw new Meteor.Error(500, 'Server error')
+        throw new Meteor.Error(500, "Server error")
       }
     })
   }

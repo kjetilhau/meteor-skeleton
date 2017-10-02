@@ -1,1 +1,1 @@
-import './frontpage.html'
+import "./frontpage.html"
