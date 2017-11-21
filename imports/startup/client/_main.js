@@ -24,3 +24,6 @@ import "/imports/ui/helpers/handlebars-lists.js"
 
 // Notifications
 import "/imports/modules/notifier.js"
+
+// Bootstrap
+import "bootstrap"
