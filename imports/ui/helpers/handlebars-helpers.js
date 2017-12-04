@@ -40,3 +40,9 @@ Template.registerHelper("getProfileImage", image => {
 Template.registerHelper("bytesToSize", bytes => {
   return helpers.bytesToSize(bytes)
 })
+
+// Translates those bytes to something more readable (e.g. 1.2 MB)
+Template.registerHelper("isLoggedIn", () => {
+  return !!Meteor.user()
+})
+
